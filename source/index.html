@@ -1,12 +1,212 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>HTML Academy: приложение Pink</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="wrapper">
+        <a class="page-header__logo">
+          <img src="img/logotype-white-mobile.png" style="background-color: black;" width="74" height="23" alt="Логотип приложения Pink."
+        </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
+          <ul class="main-nav__list site-list">
+            <li class="site__item">
+              <a class="site__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="contest.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="https://htmlacademy.ru/intensive/adaptive">
+                Html Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink</h1>
+
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h2 class="visually-hidden">Описание</h2>
+
+          <p class="intro__slogan">
+            Взгляните на жизнь иначе!
+          </p>
+
+          <img class="intro__img" src="img/phone.jpg" width="320" height="286" alt="Демонстрация приложения.">
+
+          <a class="intro__download-button" href="">
+            Скачать приложение
+          </a>
+
+          <ul class="intro__logo-list">
+            <li class="intro__logo-item">
+              <a class="intro__logo-link" href="">
+                <span class="visually-hidden">Логотип Apple</span>
+              </a>        
+            </li>
+            <li class="intro__logo-item">
+              <a class="intro__logo-link" href="">            
+                <span class="visually-hidden">Логотип Android</span>                
+              </a>
+            </li>
+            <li class="intro__logo-item"> 
+              <a class="intro__logo-link" href="">             
+                <span class="visually-hidden">Логотип Microsoft</span>                
+              </a>
+            </li>
+          </ul>
+
+          <p class="intro__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Информация</h2>
+
+          <p class="information__slogan">
+            Устали от серости мегаполиса?
+            Нам есть, что вам предложить!
+          </p>
+
+          <ul class="information__list">
+            <li class="information__item">
+              <h3 class="information__title">Поднимает настроение</h3>
+              <p class="information__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__title">Меняет мир вокруг</h3>
+              <p class="information__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект              
+              </p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__title">Заводит новых друзей</h3>
+              <p class="information__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>    
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Отзывы</h2>
+
+          <ul class="reviews__list slider">
+            <li class="reviews__item slider-item">
+              <blockquote class="reviews__block">
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+                <span class="reviews__autor">Николай Петров</span>
+              </blockquote>
+            </li>
+          </ul>
+
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="price">
+        <h2 class="visually-hidden">Прайс</h2>
+
+        <div class="wrapper">
+          <table class="price__table">
+            <caption class="visually-hidden"></caption>
+            <tr class="price__table__row">
+              <th class="column-title"></th>
+              <th class="column-title">
+                <dt class="column-title__name">БАЗА</dt>
+                <dd class="column-title__value">1,99 USD</dd>                
+              </th>
+              <th class="column-title">
+                <dt class="column-title__name">СТАНДАРТ</dt>
+                <dd class="column-title__value">3,99 USD</dd>                
+              </th>
+              <th class="column-title">
+                <dt class="column-title__name">АНЛИМ</dt>
+                <dd class="column-title__value">9,99 USD</dd>                
+              </th>
+            </tr>
+
+            <tr class="price__table__row">
+              <td class="row-title">
+                Розовый фильтр
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">Yes</span>
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">Yes</span>
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">Yes</span>
+              </td>
+            </tr>
+
+            <tr class="price__table__row">
+              <td class="row-title">
+                Смайлики
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">No</span>
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">Yes</span>
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">Yes</span>
+              </td>
+            </tr>
+
+            <tr class="price__table__row">
+              <td class="row-title">
+                Комментарии
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">No</span>
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">No</span>
+              </td>
+              <td class="row-cell">
+                <span class="visually-hidden">Yes</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
