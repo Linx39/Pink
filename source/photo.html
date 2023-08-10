@@ -3,51 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: приложение Pink</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body class="page__body">
     <header class="page-header">
       <div class="wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo/logo-small-white.svg" style="background-color: black;" width="74" height="23" alt="Логотип приложения Pink.">
-        </a>
+        <section class="page-header__navigation navigation">
+          <a class="page-header__logo">
+            <img src="img/logo/logo-small-white.svg" style="background-color: black;" width="74" height="23" alt="Логотип приложения Pink.">
+          </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link-current" href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="contest.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                Html Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link-current" href="photo.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="contest.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  Html Academy
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="page-inner__intro intro">
+          <h1 class="page-inner__title">Фотографии пользователей</h1>
+        </section>
       </div>
     </header>
 
     <main class="page-inner">
       <section class="photo">
-        <div class="page-inner__container">
-          <h1 class="photo__title">Фотографии пользователей</h1>
-
+        <div class="page-inner__wrapper">
+          <h2 class="visually-hidden">Фотографии</h2>
           <p class="photo__slogan">
             Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
@@ -122,7 +128,7 @@
 
             <li class="photo__item photo__item--current">
               <img class="photo__img" src="./img/photo/photo-3-mobile.jpg" width="280" height="180" alt="Фото-3.">
-              
+
               <blockquote class="photo__description">
                 <cite class="photo__author">Борис</cite>
                 <time class="photo__date" datetime="2023-08-04">
@@ -143,7 +149,7 @@
 
             <li class="photo__item photo__item--current">
               <img class="photo__img" src="./img/photo/photo-4-mobile.jpg" width="280" height="180" alt="Фото-4.">
-              
+
               <blockquote class="photo__description">
                 <cite class="photo__author">Сергей</cite>
                 <time class="photo__date" datetime="2023-08-04">
@@ -164,7 +170,7 @@
 
             <li class="photo__item photo__item--current">
               <img class="photo__img" src="./img/photo/photo-5-mobile.jpg" width="280" height="180" alt="Фото-5.">
-              
+
               <blockquote class="photo__description">
                 <cite class="photo__author">Максим</cite>
                 <time class="photo__date" datetime="2023-08-04">
@@ -185,7 +191,7 @@
 
             <li class="photo__item photo__item--current">
               <img class="photo__img" src="./img/photo/photo-6-mobile.jpg" width="280" height="180" alt="Фото-6.">
-              
+
               <blockquote class="photo__description">
                 <cite class="photo__author">Надежда</cite>
                 <time class="photo__date" datetime="2023-08-04">
@@ -203,7 +209,7 @@
                 <p class="photo__like-text">Нравится: 2560</p>
               </div>
             </li>
-          </ul>        
+          </ul>
         </div>
       </section>
 
@@ -221,32 +227,32 @@
               <label class="upload__form-image-label">
                 <img src="./img/photo/photo-7-mobile.jpg" width="280" height="374" alt="Загружаемое фото.">
                 <input class="visually-hidden" type="file" name="image">
-              </label>              
+              </label>
             </fieldset>
 
             <fieldset class="upload__form-effects effects">
 
               <ul class="effects__list">
-                <li class="effects__item effect__crop effect__item--current ">                  
+                <li class="effects__item effect__crop effect__item--current ">
                   <label class="effects__label">
                     <span class="visually-hidden">Обрезать фото</span>
                     <input class="visually-hidden" type="number" name="effect-crop" min="1" max="100" value="83">
                   </label>
                 </li>
 
-                <li class="effects__item effect__fill">                  
+                <li class="effects__item effect__fill">
                   <label class="effects__label">
                     <span class="visually-hidden">Изменить заливку</span>
                     <input class="visually-hidden" type="number" name="effect-fill" min="1" max="100" value="50">
                   </label>
                 </li>
 
-                <li class="effects__item effect__contrast">                  
+                <li class="effects__item effect__contrast">
                   <label class="effects__label">
                     <span class="visually-hidden">Изменить контрастность</span>
                     <input class="visually-hidden" type="number" name="effect-contrast" min="1" max="100" value="50">
                   </label>
-                </li>                  
+                </li>
               </ul>
 
               <div class="upload__range">
@@ -264,7 +270,7 @@
               <button class="upload__form__submit app-button" type="submit">Запостить</button>
               <button class="upload__form__reset app-button" type="reset">Отмена</button>
             </fieldset>
-          </form>        
+          </form>
         </div>
 
       </section>
@@ -299,7 +305,7 @@
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span> 
+            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>

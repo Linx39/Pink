@@ -3,51 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: приложение Pink</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body class="page__body">
     <header class="page-header">
       <div class="wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo/logo-small-white.svg" style="background-color: black;" width="74" height="23" alt="Логотип приложения Pink.">
-        </a>
+        <section class="page-header__navigation navigation">
+          <a class="page-header__logo">
+            <img src="img/logo/logo-small-white.svg" width="74" height="23" alt="Логотип приложения Pink.">
+          </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="contest.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                Html Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contest.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  Html Academy
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение Pink</h1>
-
-      <section class="intro">
-        <div class="intro__wrapper">
+        <section class="page-header__intro intro">
           <h2 class="visually-hidden">Описание</h2>
 
           <p class="intro__slogan">
@@ -66,16 +63,16 @@
             <li class="intro__logo-item intro__logo-item--apple">
               <a class="intro__logo-link" href="">
                 <span class="visually-hidden">Логотип Apple</span>
-              </a>        
-            </li>
-            <li class="intro__logo-item intro__logo-item--android">
-              <a class="intro__logo-link" href="">            
-                <span class="visually-hidden">Логотип Android</span>                
               </a>
             </li>
-            <li class="intro__logo-item intro__logo-item--microsoft"> 
-              <a class="intro__logo-link" href="">             
-                <span class="visually-hidden">Логотип Microsoft</span>                
+            <li class="intro__logo-item intro__logo-item--android">
+              <a class="intro__logo-link" href="">
+                <span class="visually-hidden">Логотип Android</span>
+              </a>
+            </li>
+            <li class="intro__logo-item intro__logo-item--microsoft">
+              <a class="intro__logo-link" href="">
+                <span class="visually-hidden">Логотип Microsoft</span>
               </a>
             </li>
           </ul>
@@ -83,8 +80,12 @@
           <p class="intro__description">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
-        </div>
-      </section>
+        </section>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink</h1>
 
       <section class="information">
         <div class="wrapper">
@@ -105,7 +106,7 @@
             <li class="information__item">
               <h3 class="information__title">Меняет мир вокруг</h3>
               <p class="information__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект              
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
             <li class="information__item">
@@ -114,7 +115,7 @@
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
             </li>
-          </ul>    
+          </ul>
         </div>
       </section>
 
@@ -152,15 +153,15 @@
               <th class="row__cell column-title column-title--emty"></th>
               <th class="row__cell column-title">
                 <span class="column-title__name">БАЗА</span>
-                <span class="column-title__value">1,99 USD</span>                
+                <span class="column-title__value">1,99 USD</span>
               </th>
               <th class="row__cell column-title">
                 <span class="column-title__name">СТАНДАРТ</span>
-                <span class="column-title__value">3,99 USD</span>                
+                <span class="column-title__value">3,99 USD</span>
               </th>
               <th class="row__cell column-title">
                 <span class="column-title__name">АНЛИМ</span>
-                <span class="column-title__value">9,99 USD</span>                
+                <span class="column-title__value">9,99 USD</span>
               </th>
             </tr>
 
@@ -279,7 +280,7 @@
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span> 
+            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>

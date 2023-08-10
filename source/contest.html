@@ -3,58 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: приложение Pink</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body class="page__body">
     <header class="page-header">
       <div class="wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo/logo-small-white.svg" style="background-color: black;" width="74" height="23" alt="Логотип приложения Pink.">
-        </a>
+        <section class="page-header__navigation navigation">
+          <a class="page-header__logo">
+            <img src="img/logo/logo-small-white.svg" style="background-color: black;" width="74" height="23" alt="Логотип приложения Pink.">
+          </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link-current" href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="contest.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                Html Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link-current" href="photo.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="contest.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  Html Academy
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="page-inner__intro intro">
+          <h1 class="page-inner__title">
+            Конкурс на самое
+            безбашенное
+            путешествие с Пинк
+          </h1>
+        </section>
       </div>
     </header>
 
     <main class="page-inner">
       <section class="contest">
         <div class="contest__wrapper">
-          <h2 class="contest__tittle">
-            Конкурс на самое
-            безбашенное
-            путешествие с Пинк
-          </h2>
+          <h2 class="visually-hidden">Конкурс </h2>
 
           <p class="contest__description">
             Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000 
+            шанс выиграть ценный приз — 1000
             миль на вашу бонусную карту!
           </p>
 
@@ -62,13 +69,13 @@
             <fieldset class="contest__form__group">
               <legend class="visually-hidden">ФИО</legend>
 
-              <label class="contest__form__label" for="surname">ФАМИЛИЯ:</label>              
+              <label class="contest__form__label" for="surname">ФАМИЛИЯ:</label>
               <input class="contest__form__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-              
-              <label class="contest__form__label" for="name">ИМЯ:</label>              
+
+              <label class="contest__form__label" for="name">ИМЯ:</label>
               <input class="contest__form__field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-              
-              <label class="contest__form__label" for="patronymic">ОТЧЕСТВО:</label>              
+
+              <label class="contest__form__label" for="patronymic">ОТЧЕСТВО:</label>
               <input class="contest__form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </fieldset>
 
@@ -132,10 +139,10 @@
             <fieldset class="contest__form__group">
               <legend class="visually-hidden">Контактные данные</legend>
 
-              <label class="contest__form__label" for="phone">НОМЕР ТЕЛЕФОНА</label>              
+              <label class="contest__form__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
               <input class="contest__form__field" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
-              
-              <label class="contest__form__label" for="email">АДРЕС ПОЧТЫ</label>              
+
+              <label class="contest__form__label" for="email">АДРЕС ПОЧТЫ</label>
               <input class="contest__form__field" type="text" name="email" id="email" placeholder="Введите почту *" required>
             </fieldset>
 
@@ -215,7 +222,7 @@
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span> 
+            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>

@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+  font-display: swap;
+}
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.app-button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid #ffffff;
+}
+.page__body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #ffffff;
+}
+.page-header {
+  color: #ffffff;
+  background-color: #1D2631;
+  background-image: url("../../img/back-header-small.png");
+  background-size: 320px 462px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.navigation {
+  background-color: #000000;
+  opacity: 0.3;
+}
+.main-nav {
+  color: #ffffff;
+  background-color: #283645;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+.main-nav__toggle {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+.main-nav__link {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.intro__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+.intro__logo-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.intro__logo-link {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+.intro__description {
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
