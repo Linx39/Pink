@@ -371,7 +371,7 @@
 .upload__form {
   background-color: #F2F2F2;
 }
-.upload__form-fieldset {
+.upload__form__group {
   border: none;
 }
 .upload-buttons__submit {
@@ -382,5 +382,51 @@
   color: #283645;
   border-color: #283645;
   opacity: 0.1;
+}
+.contest__description {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.contest__form-group {
+  border: none;
+}
+.contest__form-label {
+  color: #D22856;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.contest__form-field::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+.contest__form-field {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+.controls {
+  background-color: #F2F2F2;
+}
+.controls__legend {
+  color: #D22856;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.controls__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.controls__label-text {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
