@@ -31,6 +31,14 @@
   background-color: inherit;
   cursor: pointer;
 }
+.page__body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #ffffff;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,10 +60,11 @@
   color: inherit;
   background-color: inherit;
   cursor: pointer;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  border: 3px solid #ffffff;
+  border-width: 3px;
+  border-style: solid;
 }
 .slider__toggles {
   margin: 0;
@@ -74,23 +83,15 @@
   background-color: inherit;
   cursor: pointer;
 }
-.page__body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #283645;
-  background-color: #ffffff;
-}
 .page-header {
   color: #ffffff;
   background-color: #1D2631;
   background-image: url("../../img/back-header-small.png");
   background-size: contain;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
 }
-.navigation {
+.page-header__navigation {
   padding: 21px 20px;
   background-color: #000000;
   opacity: 0.3;
@@ -117,13 +118,12 @@
   height: 24px;
   background-color: #f50909;
 }
-.main-nav__list {
+.site-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: none;
 }
-.main-nav__link {
+.site-list__link {
   display: inline-block;
   box-sizing: border-box;
   border: none;
@@ -141,6 +141,9 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+}
+.intro__download-button {
+  border-color: #ffffff;
 }
 .intro__logo-list {
   margin: 0;
@@ -300,5 +303,84 @@
   color: inherit;
   background-color: inherit;
   cursor: pointer;
+}
+.inner-intro__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+}
+.photo {
+  padding: 0 20px;
+}
+.photo__slogan {
+  padding: 54px 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.photo__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.photo__container {
+  padding: 25px 10px 25px 17px;
+  background-color: #F2F2F2;
+}
+.photo__description {
+  margin: 0;
+  padding: 0;
+}
+.photo__author {
+  font-weight: 700;
+  font-style: normal;
+}
+.photo__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.photo__like-button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  width: 13px;
+  height: 12px;
+  background-color: #a30808;
+}
+.photo__like-text {
+  color: #D22856;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.upload__slogan {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.upload__form {
+  background-color: #F2F2F2;
+}
+.upload__form-fieldset {
+  border: none;
+}
+.upload-buttons__submit {
+  color: #D22856;
+  border-color: #D22856;
+}
+.upload-buttons__reset {
+  color: #283645;
+  border-color: #283645;
+  opacity: 0.1;
 }
 /*# sourceMappingURL=style.css.map */
