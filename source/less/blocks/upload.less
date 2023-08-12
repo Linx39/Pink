@@ -2,26 +2,30 @@
 }
 
 .upload__slogan {
+  padding: 49px 20px 42px 20px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
 }
 
 .upload__form {
+  padding: 20px 20px 41px 20px;
   background-color: @color-gray;
 }
 
-.upload__form__group {
+.upload__form-group {
   border: none;
 }
 
-.upload-buttons__submit {
-  color: @color-pink;
-  border-color: @color-pink;
-}
+.upload__form-button {
+  &--submit {
+    color: @color-pink;
+    border-color: @color-pink;
+  }
 
-.upload-buttons__reset {
-  color: @color-blue;
-  border-color: @color-blue;
-  opacity: 0.1;
+  &--reset {
+    color: @color-blue;
+    border-color: @color-blue;
+    opacity: 0.1;
+  }
 }

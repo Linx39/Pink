@@ -44,8 +44,8 @@
           </nav>
         </section>
 
-        <section class="page-header__intro inner-intro">
-          <h1 class="inner-intro__title">Фотографии пользователей</h1>
+        <section class="page-header__intro intro intro--inner">
+          <h1 class="intro__title">Фотографии пользователей</h1>
         </section>
       </div>
     </header>
@@ -60,11 +60,13 @@
           </p>
 
           <ul class="photo__list">
-            <li class="photo__item photo__item--current">
-              <img class="photo__img" src="./img/photo/panorama-mobile.jpg" width="320" height="137" alt="Главное фото.">
+            <li class="photo__item">
+              <div class="photo__img photo__img--wide">
+                <img src="./img/photo/panorama-mobile.jpg" width="320" height="137" alt="Главное фото.">
+              </div>
 
-              <div class="photo__container">
-                <blockquote class="photo__description">
+              <div class="photo__blockquote">
+                <blockquote class="photo__blockquote">
                   <cite class="photo__author">Анна</cite>
                   <time class="photo__date" datetime="2023-08-04">
                     <span class="photo__time">(5 минут назад)</span>
@@ -86,11 +88,13 @@
               </div>
             </li>
 
-            <li class="photo__item photo__item--current">
-              <img class="photo__img" src="./img/photo/photo-1-mobile.jpg" width="280" height="180" alt="Фото-1.">
+            <li class="photo__item">
+              <div class="photo__img">
+                <img src="./img/photo/photo-1-mobile.jpg" width="280" height="180" alt="Фото-1.">
+              </div>
 
-              <div class="photo__container">
-                <blockquote class="photo__description">
+              <div class="photo__description">
+                <blockquote class="photo__blockquote">
                   <cite class="photo__author">Левон</cite>
                   <time class="photo__date" datetime="2023-08-04">
                     <span class="photo__time">(5 часов назад)</span>
@@ -109,11 +113,13 @@
               </div>
             </li>
 
-            <li class="photo__item photo__item--current">
-              <img class="photo__img" src="./img/photo/photo-2-mobile.jpg" width="280" height="180" alt="Фото-2.">
+            <li class="photo__item">
+              <div class="photo__img">
+                <img src="./img/photo/photo-2-mobile.jpg" width="280" height="180" alt="Фото-2.">
+              </div>
 
-              <div class="photo__container">
-                <blockquote class="photo__description">
+              <div class="photo__description">
+                <blockquote class="photo__blockquote">
                   <cite class="photo__author">Антон</cite>
                   <time class="photo__date" datetime="2023-08-04">
                     <span class="photo__time">(12 часов назад)</span>
@@ -132,11 +138,13 @@
               </div>
             </li>
 
-            <li class="photo__item photo__item--current">
-              <img class="photo__img" src="./img/photo/photo-3-mobile.jpg" width="280" height="180" alt="Фото-3.">
+            <li class="photo__item">
+              <div class="photo__img">
+                <img src="./img/photo/photo-3-mobile.jpg" width="280" height="180" alt="Фото-3.">
+              </div>
 
-              <div class="photo__container">
-                <blockquote class="photo__description">
+              <div class="photo__description">
+                <blockquote class="photo__blockquote">
                   <cite class="photo__author">Борис</cite>
                   <time class="photo__date" datetime="2023-08-04">
                     <span class="photo__time">(20 часов назад)</span>
@@ -155,11 +163,13 @@
               </div>
             </li>
 
-            <li class="photo__item photo__item--current">
-              <img class="photo__img" src="./img/photo/photo-4-mobile.jpg" width="280" height="180" alt="Фото-4.">
+            <li class="photo__item">
+              <div class="photo__img">
+                <img src="./img/photo/photo-4-mobile.jpg" width="280" height="180" alt="Фото-4.">
+              </div>
 
-              <div class="photo__container">
-                <blockquote class="photo__description">
+              <div class="photo__description">
+                <blockquote class="photo__blockquote">
                   <cite class="photo__author">Сергей</cite>
                   <time class="photo__date" datetime="2023-08-04">
                     <span class="photo__time">(25 часов назад)</span>
@@ -178,11 +188,13 @@
               </div>
             </li>
 
-            <li class="photo__item photo__item--current">
-              <img class="photo__img" src="./img/photo/photo-5-mobile.jpg" width="280" height="180" alt="Фото-5.">
+            <li class="photo__item">
+              <div class="photo__img">
+                <img src="./img/photo/photo-5-mobile.jpg" width="280" height="180" alt="Фото-5.">
+              </div>
 
-              <div class="photo__container">
-                <blockquote class="photo__description">
+              <div class="photo__description">
+                <blockquote class="photo__blockquote">
                   <cite class="photo__author">Максим</cite>
                   <time class="photo__date" datetime="2023-08-04">
                     <span class="photo__time">(40 часов назад)</span>
@@ -201,11 +213,13 @@
               </div>
             </li>
 
-            <li class="photo__item photo__item--current">
-              <img class="photo__img" src="./img/photo/photo-6-mobile.jpg" width="280" height="180" alt="Фото-6.">
+            <li class="photo__item">
+              <div class="photo__img">
+                <img src="./img/photo/photo-6-mobile.jpg" width="280" height="180" alt="Фото-6.">
+              </div>
 
-              <div class="photo__container">
-                <blockquote class="photo__description">
+              <div class="photo__description">
+                <blockquote class="photo__blockquote">
                   <cite class="photo__author">Надежда</cite>
                   <time class="photo__date" datetime="2023-08-04">
                     <span class="photo__time">(45 часов назад)</span>
@@ -244,24 +258,24 @@
               </label>
             </fieldset>
 
-            <fieldset class="upload__form-group upload-effects effects">
-              <ul class="upload-effects__list effects__list">
-                <li class="effects__item effect__crop effect__item--current ">
-                  <label class="effects__label">
+            <fieldset class="upload__form-group upload-effects">
+              <ul class="upload-effects__list effects-list">
+                <li class="effects-list__item">
+                  <label class="effects-list__label effects-list__label--crop effect__label--current">
                     <span class="visually-hidden">Обрезать фото</span>
                     <input class="visually-hidden" type="number" name="effect-crop" min="1" max="100" value="83">
                   </label>
                 </li>
 
-                <li class="effects__item effect__fill">
-                  <label class="effects__label">
+                <li class="effects-list__item">
+                  <label class="effects-list__label effects-list__label--fill">
                     <span class="visually-hidden">Изменить заливку</span>
                     <input class="visually-hidden" type="number" name="effect-fill" min="1" max="100" value="50">
                   </label>
                 </li>
 
-                <li class="effects__item effect__contrast">
-                  <label class="effects__label">
+                <li class="effects-list__item">
+                  <label class="effects-list__label effects-list__label--contrast">
                     <span class="visually-hidden">Изменить контрастность</span>
                     <input class="visually-hidden" type="number" name="effect-contrast" min="1" max="100" value="50">
                   </label>
@@ -279,9 +293,9 @@
               </div>
             </fieldset>
 
-            <fieldset class="upload__form-group upload-buttons">
-              <button class="upload-buttons__submit app-button" type="submit">Запостить</button>
-              <button class="upload-buttons__reset app-button" type="reset">Отмена</button>
+            <fieldset class="upload__form-group">
+              <button class="upload__form-button upload__form-button--submit app-button" type="submit">Запостить</button>
+              <button class="upload__form-button upload__form-button--reset app-button" type="reset">Отмена</button>
             </fieldset>
           </form>
         </div>
