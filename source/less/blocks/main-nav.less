@@ -1,19 +1,16 @@
 .main-nav {
-  color: @color-white;
-  background-color: @color-blue;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
 }
 
-.main-nav__toggle {
-  .button();
-  width: 50px;
-  height: 24px;
-  background-color: rgb(245, 9, 9);
-}
-
 .main-nav__list {
+  .list();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+
   &--hide {
     display: none;
   }
@@ -21,4 +18,13 @@
   &--show {
     display: block;
   }
+}
+
+.main-nav__item {
+  padding: 25px 20px;
+}
+
+.main-nav__link {
+  .button();
+  text-transform: uppercase;
 }
