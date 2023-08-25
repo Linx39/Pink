@@ -107,20 +107,24 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 27px 130px 43px 130px;
+    padding: 0 130px;
   }
 }
-.page-header__navigation-wrapper {
+.page-header__top-menu {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
+  align-items: center;
   height: 69px;
-  padding: 23px 20px;
+  padding: 0 20px;
 }
 @media (min-width: 660px) {
-  .page-header__navigation-wrapper {
+  .page-header__top-menu {
     height: 110px;
-    padding: 27px 20px 43px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__top-menu {
+    padding: 0;
   }
 }
 .page-header__toggle {
@@ -143,6 +147,23 @@ img {
     display: none;
   }
 }
+.page-header__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 20px;
+}
+@media (min-width: 660px) {
+  .page-header__intro {
+    width: 300px;
+    padding: 102px 20px 119px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__intro {
+    padding: 114px 130px 130px 130px;
+  }
+}
 .main-nav {
   font-weight: 700;
   font-size: 18px;
@@ -152,10 +173,13 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: none;
 }
 @media (min-width: 1200px) {
   .main-nav__list {
     display: flex;
+    justify-content: space-between;
+    width: 618px;
   }
 }
 .main-nav__list--hide {
@@ -165,7 +189,13 @@ img {
   display: block;
 }
 .main-nav__item {
-  padding: 25px 20px;
+  height: 63px;
+  border: 1px solid red;
+}
+@media (min-width: 1200px) {
+  .main-nav__item {
+    height: 100%;
+  }
 }
 .main-nav__link {
   display: inline-block;
@@ -178,13 +208,9 @@ img {
   color: inherit;
   background-color: inherit;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
   text-transform: uppercase;
-}
-.intro--main {
-  padding: 32px 20px 38px 20px;
-}
-.intro--inner {
-  padding: 36px 20px 36px 20px;
 }
 .intro__title {
   font-size: 24px;
@@ -203,11 +229,15 @@ img {
 }
 .intro__description {
   font-weight: 300;
+  text-align: center;
 }
 .logo-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 204px;
 }
 .logo-link {
   display: inline-block;
@@ -220,9 +250,30 @@ img {
   color: inherit;
   background-color: inherit;
   cursor: pointer;
+  width: 47px;
+  height: 36px;
+  background-color: red;
+}
+.page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .information {
-  padding: 46px 20px 0 20px;
+  width: 100%;
+}
+.information__slogan-wrapper {
+  padding: 46px 20px 35px 20px;
+}
+@media (min-width: 660px) {
+  .information__slogan-wrapper {
+    padding: 58px 36px 38px 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .information__slogan-wrapper {
+    padding: 77px 210px 66px 210px;
+  }
 }
 .information__slogan {
   font-weight: 300;
@@ -230,10 +281,40 @@ img {
   line-height: 29px;
   text-align: center;
 }
+.information__list-wrapper {
+  padding: 88px 20px 325px 20px;
+  background-color: #F2F2F2;
+}
+@media (min-width: 660px) {
+  .information__list-wrapper {
+    padding: 0 20px 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .information__list-wrapper {
+    padding: 307px 154px 59px 184px;
+  }
+}
 .information__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+@media (min-width: 660px) {
+  .information__list {
+    width: 50%;
+    margin-left: 50%;
+    padding: 84px 0 49px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .information__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+    padding: 59px 0;
+  }
 }
 .information__title {
   font-weight: 700;
@@ -243,6 +324,34 @@ img {
 }
 .information__description {
   text-align: center;
+}
+.research {
+  width: 100%;
+}
+@media (max-width: 659px) {
+  .research {
+    display: none;
+  }
+}
+@media (min-width: 660px) {
+  .research__wrapper {
+    padding: 54px 20px 138px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .research__wrapper {
+    padding: 17px 166px 67px 500px;
+    background-color: #F2F2F2;
+  }
+}
+.research__slogan {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+}
+.research__link {
+  color: #D22856;
 }
 .reviews {
   padding: 50px 20px 60px 20px;
