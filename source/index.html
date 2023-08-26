@@ -47,41 +47,43 @@
       </section>
 
       <section class="page-header__intro intro intro--main">
-        <h1 class="visually-hidden">Приложение Pink</h1>
+        <div class="page-header__intro-wrapper">
+          <h1 class="visually-hidden">Приложение Pink</h1>
 
-        <!-- <div class="intro__img">
-          <img src="img/phone.png" width="320" height="286" alt="Демонстрация приложения.">
-        </div> -->
+          <!-- <div class="intro__img">
+            <img src="img/phone.png" width="320" height="286" alt="Демонстрация приложения.">
+          </div> -->
 
-        <p class="intro__slogan">
-          Взгляните на жизнь иначе!
-        </p>
+          <p class="intro__slogan">
+            Взгляните на жизнь иначе!
+          </p>
 
-        <a class="intro__download-button app-button" href="">
-          Скачать приложение
-        </a>
+          <a class="intro__download-button app-button" href="">
+            Скачать приложение
+          </a>
 
-        <ul class="intro__logo-list logo-list">
-          <li class="logo-item logo-item--apple">
-            <a class="logo-link" href="">
-              <span class="visually-hidden">Логотип Apple</span>
-            </a>
-          </li>
-          <li class="logo-item logo-item--android">
-            <a class="logo-link" href="">
-              <span class="visually-hidden">Логотип Android</span>
-            </a>
-          </li>
-          <li class="logo-item logo-item--microsoft">
-            <a class="logo-link" href="">
-              <span class="visually-hidden">Логотип Microsoft</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="intro__logo-list logo-list">
+            <li class="logo-item logo-item--apple">
+              <a class="logo-link" href="">
+                <span class="visually-hidden">Логотип Apple</span>
+              </a>
+            </li>
+            <li class="logo-item logo-item--android">
+              <a class="logo-link" href="">
+                <span class="visually-hidden">Логотип Android</span>
+              </a>
+            </li>
+            <li class="logo-item logo-item--microsoft">
+              <a class="logo-link" href="">
+                <span class="visually-hidden">Логотип Microsoft</span>
+              </a>
+            </li>
+          </ul>
 
-        <p class="intro__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+          <p class="intro__description">
+            Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </section>
     </header>
 
@@ -146,12 +148,12 @@
 
         <ul class="reviews__list slider">
           <li class="reviews__item slider-item">
-            <blockquote class="reviews__content review">
-              <p class="review__text">
+            <blockquote class="reviews__content">
+              <cite class="reviews__auhtor">Николай Петров</cite>
+              <span class="reviews__auhtor-details">25 лет, водитель трамвая</span>
+              <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
-              <cite class="review__auhtor">Николай Петров</cite>
-              <span class="review__auhtor-details">25 лет, водитель трамвая</span>
             </blockquote>
           </li>
         </ul>
@@ -170,111 +172,115 @@
       </section>
 
       <section class="price">
-        <h2 class="visually-hidden">Прайс</h2>
+        <div class="price__wrapper">
+          <h2 class="visually-hidden">Прайс</h2>
 
-        <table class="price__table price-table">
-          <caption class="visually-hidden">Таблица тарифов</caption>
-          <tr class="price-table__row price-table__row--header">
-            <th class="price-table__header price-table__header--empty"></th>
-            <th class="price-table__header">
-              <span class="price-table__header-name">БАЗА</span>
-              <span class="price-table__header-value">1,99 USD</span>
-            </th>
-            <th class="price-table__header price-table__header--current">
-              <span class="price-table__header-name">СТАНДАРТ</span>
-              <span class="price-table__header-value">3,99 USD</span>
-            </th>
-            <th class="price-table__header">
-              <span class="price-table__header-name">АНЛИМ</span>
-              <span class="price-table__header-value">9,99 USD</span>
-            </th>
-          </tr>
+          <table class="price__table">
+            <caption class="visually-hidden">Таблица тарифов</caption>
+            <tr class="price__table-row price__table-row--header">
+              <th class="price__table-header price__table-header--empty"></th>
+              <th class="price__table-header">
+                <span class="price__table-header-name">БАЗА</span>
+                <span class="price__table-header-value">1,99 USD</span>
+              </th>
+              <th class="price__table-header price__table-header--current">
+                <span class="price__table-header-name">СТАНДАРТ</span>
+                <span class="price__table-header-value">3,99 USD</span>
+              </th>
+              <th class="price__table-header">
+                <span class="price__table-header-name">АНЛИМ</span>
+                <span class="price__table-header-value">9,99 USD</span>
+              </th>
+            </tr>
 
-          <tr class="price-table__row">
-            <td class="price-table__cell">
-              Розовый фильтр
-            </td>
-            <td class="price-table__cell price-table__cell--yes">
-              <span class="visually-hidden">Yes</span>
-            </td>
-            <td class="price-table__cell price-table__cell--yes">
-              <span class="visually-hidden">Yes</span>
-            </td>
-            <td class="price-table__cell price-table__cell--yes">
-              <span class="visually-hidden">Yes</span>
-            </td>
-          </tr>
+            <tr class="price__table-row">
+              <td class="price__table-cell">
+                Розовый фильтр
+              </td>
+              <td class="price__table-cell price__table-cell--yes">
+                <span class="visually-hidden">Yes</span>
+              </td>
+              <td class="price__table-cell price__table-cell--yes">
+                <span class="visually-hidden">Yes</span>
+              </td>
+              <td class="price__table-cell price__table-cell--yes">
+                <span class="visually-hidden">Yes</span>
+              </td>
+            </tr>
 
-          <tr class="price-table__row">
-            <td class="price-table__cell">
-              Смайлики
-            </td>
-            <td class="price-table__cell price-table__cell--no">
-              <span class="visually-hidden">No</span>
-            </td>
-            <td class="price-table__cell price-table__cell--yes">
-              <span class="visually-hidden">Yes</span>
-            </td>
-            <td class="price-table__cell price-table__cell--yes">
-              <span class="visually-hidden">Yes</span>
-            </td>
-          </tr>
+            <tr class="price__table-row">
+              <td class="price__table-cell">
+                Смайлики
+              </td>
+              <td class="price__table-cell price__table-cell--no">
+                <span class="visually-hidden">No</span>
+              </td>
+              <td class="price__table-cell price__table-cell--yes">
+                <span class="visually-hidden">Yes</span>
+              </td>
+              <td class="price__table-cell price__table-cell--yes">
+                <span class="visually-hidden">Yes</span>
+              </td>
+            </tr>
 
-          <tr class="price-table__row">
-            <td class="price-table__cell">
-              Комментарии
-            </td>
-            <td class="price-table__cell price-table__cell--no">
-              <span class="visually-hidden">No</span>
-            </td>
-            <td class="price-table__cell price-table__cell--no">
-              <span class="visually-hidden">No</span>
-            </td>
-            <td class="price-table__cell price-table__cell--yes">
-              <span class="visually-hidden">Yes</span>
-            </td>
-          </tr>
-        </table>
+            <tr class="price__table-row">
+              <td class="price__table-cell">
+                Комментарии
+              </td>
+              <td class="price__table-cell price__table-cell--no">
+                <span class="visually-hidden">No</span>
+              </td>
+              <td class="price__table-cell price__table-cell--no">
+                <span class="visually-hidden">No</span>
+              </td>
+              <td class="price__table-cell price__table-cell--yes">
+                <span class="visually-hidden">Yes</span>
+              </td>
+            </tr>
+          </table>
 
-        <ul class="price__toggles slider__toggles">
-          <li class="slider__toggles-item">
-            <button class="slider__toggle" type="button">1</button>
-          </li>
-          <li class="slider__toggles-item">
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          </li>
-          <li class="slider__toggles-item">
-            <button class="slider__toggle" type="button">3</button>
-          </li>
-        </ul>
+          <ul class="price__toggles slider__toggles">
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">1</button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">3</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
 
-        <p class="contacts__slogan">
-          Остались вопросы?<br>
-          Свяжитесь с нами!
-        </p>
+          <p class="contacts__slogan">
+            Остались вопросы?<br>
+            Свяжитесь с нами!
+          </p>
 
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <span class="contacts__subtitle">Звоните:</span>
-            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__subtitle">Пишите:</span>
-            <a class="contacts__link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__subtitle">Приезжайте в гости:</span>
-            <span class="contacts__link">ул. Большая Конюшенная, 19/8</span>
-          </li>
-        </ul>
-
-        <div class="contacts__map">
-          <img src="img/map.jpg" width="320" height="200" alt="Карта с адресом.">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__subtitle">Звоните:</span>
+              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__subtitle">Пишите:</span>
+              <a class="contacts__link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__subtitle">Приезжайте в гости:</span>
+              <span class="contacts__link">ул. Большая <br> Конюшенная, 19/8</span>
+            </li>
+          </ul>
         </div>
+
+          <div class="contacts__map">
+            <img src="img/map.jpg" width="320" height="200" alt="Карта с адресом.">
+          </div>
       </section>
 
     </main>

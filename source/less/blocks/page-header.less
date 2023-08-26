@@ -1,6 +1,4 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   color: @color-white;
   background-color: @color-dark-blue;
   // background-image: url("../../img/back-header-small.png");
@@ -51,17 +49,20 @@
 }
 
 .page-header__intro {
+  width: 100%;
+}
+
+.page-header__intro-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 38px 20px;
 
   @media (min-width: @tablet-width) {
-    width: 300px;
-    padding: 102px 20px 119px 20px;
+    padding: 102px 340px 119px 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 114px 130px 130px 130px;
+    padding: 114px 766px 130px 130px;
   }
 }
