@@ -251,57 +251,91 @@
           <h2 class="visually-hidden">Загрузка фото</h2>
 
           <p class="upload__slogan">
-            Затмите их всех!
+            Затмите их всех! <br>
             Выкладывайте все, что накопилось в телефоне!
           </p>
 
           <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="upload__form-group group-image">
+            <fieldset class="upload__form-group upload__image-group">
               <label class="upload-image__label">
                 <img src="./img/photo/photo-7-mobile.jpg" width="280" height="374" alt="Загружаемое фото.">
                 <input class="visually-hidden" type="file" name="image">
               </label>
             </fieldset>
 
-            <fieldset class="upload__form-group upload-effects">
-              <ul class="upload-effects__list effects-list">
-                <li class="effects-list__item">
-                  <label class="effects-list__label effects-list__label--crop effect__label--current">
-                    <span class="visually-hidden">Обрезать фото</span>
-                    <input class="visually-hidden" type="number" name="effect-crop" min="1" max="100" value="83">
-                  </label>
-                </li>
+            <div class="upload__form-wrapper">
+              <fieldset class="upload__form-group upload__effects-group">
+                <div class="upload__effects effects">
+                  <ul class="effects__list">
+                    <li class="effects__item">
+                      <label class="effects__label effects__label--crop effect__label--current">
+                        <span class="visually-hidden">Обрезать фото</span>
+                        <input class="visually-hidden" type="number" name="effect-crop" min="1" max="100" value="83">
+                      </label>
+                    </li>
 
-                <li class="effects-list__item">
-                  <label class="effects-list__label effects-list__label--fill">
-                    <span class="visually-hidden">Изменить заливку</span>
-                    <input class="visually-hidden" type="number" name="effect-fill" min="1" max="100" value="50">
-                  </label>
-                </li>
+                    <li class="effects__item">
+                      <label class="effects__label effects__label--fill">
+                        <span class="visually-hidden">Изменить заливку</span>
+                        <input class="visually-hidden" type="number" name="effect-fill" min="1" max="100" value="50">
+                      </label>
+                    </li>
 
-                <li class="effects-list__item">
-                  <label class="effects-list__label effects-list__label--contrast">
-                    <span class="visually-hidden">Изменить контрастность</span>
-                    <input class="visually-hidden" type="number" name="effect-contrast" min="1" max="100" value="50">
-                  </label>
-                </li>
-              </ul>
-
-              <div class="upload-effects__range range">
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 200px;">
-                    <button class="range-toggle" type="button">
-                      <span class="visually-hidden">Переместить ползунок</span>
-                    </button>
-                  </div>
+                    <li class="effects__item">
+                      <label class="effects__label effects__label--contrast">
+                        <span class="visually-hidden">Изменить контрастность</span>
+                        <input class="visually-hidden" type="number" name="effect-contrast" min="1" max="100" value="50">
+                      </label>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </fieldset>
 
-            <fieldset class="upload__form-group">
-              <button class="upload__form-button upload__form-button--submit app-button" type="submit">Запостить</button>
-              <button class="upload__form-button upload__form-button--reset app-button" type="reset">Отмена</button>
-            </fieldset>
+                <div class="upload__scales scales">
+                  <ul class="scales__list">
+                    <li class="scales__item">
+                      <div class="scales--crop scales--current range">
+                        <div class="range-scale">
+                          <div class="range-bar" style="left: 200px;">
+                            <button class="range-toggle" type="button">
+                              <span class="visually-hidden">Переместить ползунок</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="scales__item">
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar" style="left: 200px;">
+                            <button class="range-toggle" type="button">
+                              <span class="visually-hidden">Переместить ползунок</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="scales__item">
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar" style="left: 200px;">
+                            <button class="range-toggle" type="button">
+                              <span class="visually-hidden">Переместить ползунок</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+
+              <fieldset class="upload__form-group upload__buttons-group">
+                <button class="upload__form-button upload__form-button--submit app-button" type="submit">Запостить</button>
+                <button class="upload__form-button upload__form-button--reset app-button" type="reset">Отмена</button>
+              </fieldset>
+            </div>
           </form>
         </div>
 
