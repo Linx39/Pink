@@ -1,12 +1,37 @@
 .photo {
-  padding: 54px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .photo__slogan {
-  padding: 0;
+  padding: 54px 20px 60px 20px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 100px 20px 85px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 130px 97px 130px;
+  }
+}
+
+.photo__wrapper {
+  width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 130px;
+  }
 }
 
 .photo__list {
@@ -14,7 +39,6 @@
 }
 
 .photo__description {
-  padding: 25px 10px 25px 17px;
   background-color: @color-gray;
 }
 

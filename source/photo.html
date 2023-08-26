@@ -9,86 +9,90 @@
 
   <body class="page__body">
     <header class="page-header">
-      <div class="wrapper">
-        <section class="page-header__navigation navigation">
+      <section class="page-header__navigation">
+        <div class="page-header__top-menu">
           <a class="page-header__logo">
-            <img src="img/logo/logo-small-white.svg" style="background-color: black;" width="74" height="23" alt="Логотип приложения Pink.">
+            <img src="img/logo/logo-small-white.svg" width="74" height="23" alt="Логотип приложения Pink.">
           </a>
 
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
 
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link-current" href="photo.html">
-                  Фотографии
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="contest.html">
-                  Конкурс
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  Html Academy
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </section>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link-current" href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="contest.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+                Html Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
 
-        <section class="page-header__intro intro intro--inner">
-          <h1 class="intro__title">Фотографии пользователей</h1>
-        </section>
-      </div>
+      <section class="page-header__intro intro">
+        <div class="intro__wrapper intro__wrapper--inner">
+          <h1 class="intro__title">Фотографии <br> пользователей</h1>
+        </div>
+      </section>
     </header>
 
     <main class="page-inner">
       <section class="photo">
-        <div class="page-inner__wrapper">
-          <h2 class="visually-hidden">Фотографии</h2>
-          <p class="photo__slogan">
-            Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?
-          </p>
+        <h2 class="visually-hidden">Фотографии</h2>
+        <p class="photo__slogan">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
 
+        <div class="photo__panorama">
+          <div class="photo__img photo__img--wide">
+            <img src="./img/photo/panorama-mobile.jpg" width="320" height="137" alt="Главное фото.">
+          </div>
+
+          <div class="photo__wrapper">
+            <div class="photo__description">
+              <blockquote class="photo__blockquote">
+                <cite class="photo__author">Анна</cite>
+                <time class="photo__date" datetime="2023-08-04">
+                  <span class="photo__time">(5 минут назад)</span>
+                </time>
+                <p class="photo__text">
+                  Прыгать или нет? Напишите в
+                  комментарии свой совет и
+                  смотрите прямую трансляцию в
+                  перископе, задавайте свои вопросы!
+                </p>
+              </blockquote>
+
+              <div class="photo__like">
+                <button class="photo__like-button">
+                  <span class="visually-hidden">Кнопка лайка</span>
+                </button>
+                <p class="photo__like-text">Нравится: 215</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo__wrapper">
           <ul class="photo__list">
-            <li class="photo__item">
-              <div class="photo__img photo__img--wide">
-                <img src="./img/photo/panorama-mobile.jpg" width="320" height="137" alt="Главное фото.">
-              </div>
-
-              <div class="photo__blockquote">
-                <blockquote class="photo__blockquote">
-                  <cite class="photo__author">Анна</cite>
-                  <time class="photo__date" datetime="2023-08-04">
-                    <span class="photo__time">(5 минут назад)</span>
-                  </time>
-                  <p class="photo__text">
-                    Прыгать или нет? Напишите в
-                    комментарии свой совет и
-                    смотрите прямую трансляцию в
-                    перископе, задавайте свои вопросы!
-                  </p>
-                </blockquote>
-
-                <div class="photo__like">
-                  <button class="photo__like-button">
-                    <span class="visually-hidden">Кнопка лайка</span>
-                  </button>
-                  <p class="photo__like-text">Нравится: 215</p>
-                </div>
-              </div>
-            </li>
-
             <li class="photo__item">
               <div class="photo__img">
                 <img src="./img/photo/photo-1-mobile.jpg" width="280" height="180" alt="Фото-1.">
