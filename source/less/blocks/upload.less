@@ -17,27 +17,114 @@
   }
 }
 
+.upload__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @color-gray;
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-white;
+  }
+}
+
 .upload__form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 280px;
   padding: 20px 20px 41px 20px;
-  background-color: @color-gray;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    padding: 57px 20px 54px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    padding: 57px 80px 57px 60px;
+    background-color: @color-gray;
+  }
 }
 
 .upload__form-group {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.upload__form-group-wrapper {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 275px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+  }
+}
+
+.upload__effects-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.upload__effects {
+  margin-bottom: 20px;
+}
+
+.upload__effects-list {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.upload__effects-list li:not(:last-child) {
+  margin-right: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.upload__scales-list {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .upload__buttons-group {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .upload__form-button {
-  width: 100%;
-  
+  width: 260px;
+  height: 55px;
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
+
   &--submit {
     color: @color-pink;
     border-color: @color-pink;

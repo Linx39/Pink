@@ -4,12 +4,6 @@
 
 .effects__list {
   .list();
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.effects__item:not(:last-child) {
-  margin-right: 35px;
 }
 
 .effects__label {
@@ -17,4 +11,14 @@
   width: 44px;
   height: 44px;
   background-color: @color-pink;
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
 }
