@@ -9,8 +9,8 @@
 
   <body class="page__body">
     <header class="page-header">
-      <section class="page-header__navigation">
-        <div class="page-header__top-menu">
+      <nav class="page-header__navigation navigation-wrapper">
+        <div class="page-header__bar navigation-wrapper__bar">
           <a class="page-header__logo">
             <img src="img/logo/logo-small-white.svg" width="74" height="23" alt="Логотип приложения Pink.">
           </a>
@@ -20,78 +20,80 @@
           </button>
         </div>
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
+        <div class="page-header__menu site-menu navigation-wrapper__menu">
+          <ul class="site-menu__list">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="photo.html">
                 Фотографии
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="contest.html">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="contest.html">
                 Конкурс
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="https://htmlacademy.ru/intensive/adaptive">
                 Html Academy
               </a>
             </li>
           </ul>
-        </nav>
-      </section>
+        </div>
+      </nav>
 
       <section class="page-header__intro intro">
-        <div class="intro__wrapper intro__wrapper--main">
-          <h1 class="visually-hidden">Приложение Pink</h1>
+        <div class="intro__main-wrapper wrapper">
+          <div class="intro__main">
+            <h1 class="visually-hidden">Приложение Pink</h1>
 
-          <!-- <div class="intro__img">
-            <img src="img/phone.png" width="320" height="286" alt="Демонстрация приложения.">
-          </div> -->
+            <!-- <div class="intro__img">
+              <img src="img/phone.png" width="320" height="286" alt="Демонстрация приложения.">
+            </div> -->
 
-          <p class="intro__slogan">
-            Взгляните на жизнь иначе!
-          </p>
+            <p class="intro__slogan">
+              Взгляните на жизнь иначе!
+            </p>
 
-          <a class="intro__download-button app-button" href="">
-            Скачать приложение
-          </a>
+            <a class="intro__download-button app-button" href="">
+              Скачать приложение
+            </a>
 
-          <ul class="intro__logo-list logo-list">
-            <li class="logo-item logo-item--apple">
-              <a class="logo-link" href="">
-                <span class="visually-hidden">Логотип Apple</span>
-              </a>
-            </li>
-            <li class="logo-item logo-item--android">
-              <a class="logo-link" href="">
-                <span class="visually-hidden">Логотип Android</span>
-              </a>
-            </li>
-            <li class="logo-item logo-item--microsoft">
-              <a class="logo-link" href="">
-                <span class="visually-hidden">Логотип Microsoft</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="intro__logo-list logo-list">
+              <li class="logo-item logo-item--apple">
+                <a class="logo-link" href="">
+                  <span class="visually-hidden">Логотип Apple</span>
+                </a>
+              </li>
+              <li class="logo-item logo-item--android">
+                <a class="logo-link" href="">
+                  <span class="visually-hidden">Логотип Android</span>
+                </a>
+              </li>
+              <li class="logo-item logo-item--microsoft">
+                <a class="logo-link" href="">
+                  <span class="visually-hidden">Логотип Microsoft</span>
+                </a>
+              </li>
+            </ul>
 
-          <p class="intro__description">
-            Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
-          </p>
+            <p class="intro__description">
+              Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
     </header>
 
     <main class="page-main">
       <section class="information">
-        <h2 class="visually-hidden">Информация</h2>
+        <div class="information__slogan-wrapper wrapper">
+          <h2 class="visually-hidden">Информация</h2>
 
-        <div class="information__slogan-wrapper">
           <p class="information__slogan">
             Устали от серости мегаполиса?
           </p>
@@ -101,27 +103,29 @@
           </p>
         </div>
 
-        <div class="information__list-wrapper">
-          <ul class="information__list">
-            <li class="information__item">
-              <h3 class="information__title">Поднимает настроение</h3>
-              <p class="information__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__title">Меняет мир вокруг</h3>
-              <p class="information__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__title">Заводит новых друзей</h3>
-              <p class="information__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
+        <div class="information__content-wrapper">
+          <div class="information__list-wrapper wrapper">
+            <ul class="information__list">
+              <li class="information__item">
+                <h3 class="information__title">Поднимает настроение</h3>
+                <p class="information__description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="information__item">
+                <h3 class="information__title">Меняет мир вокруг</h3>
+                <p class="information__description">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="information__item">
+                <h3 class="information__title">Заводит новых друзей</h3>
+                <p class="information__description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

@@ -1,10 +1,10 @@
 .page-header {
   color: @color-white;
   background-color: @color-dark-blue;
-  // background-image: url("../../img/back-header-small.png");
-  // background-size: 100% auto;
-  // background-position: center;
-  // background-repeat: no-repeat;
+  background-image: url("../../img/back-header-small.png");
+  background-size: 320px 462px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-header__navigation {
@@ -15,25 +15,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 130px;
   }
 }
 
-.page-header__top-menu {
+.page-header__bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 69px;
-  padding: 0 20px;
   // background-color: @color-black;
   // opacity: 0.3;
 
   @media (min-width: @tablet-width) {
-    height: 110px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
   }
 }
 
@@ -48,6 +43,15 @@
   }
 }
 
+.page-header__menu {
+  &--hide {
+    display: none;
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
 .page-header__intro {
-  width: 100%;
 }
