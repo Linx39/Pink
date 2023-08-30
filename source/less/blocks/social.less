@@ -1,14 +1,12 @@
 .social {
-
 }
 
 .social__list {
   .list();
-  display: flex;
-}
 
-.social__item:not(:last-child) {
-  margin-right: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  gap: 14px;
 }
 
 .social__link {

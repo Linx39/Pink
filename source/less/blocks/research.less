@@ -1,22 +1,45 @@
 .research {
-
   @media (max-width: @mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-gray;
   }
 }
 
 .research__wrapper {
   @media (min-width: @tablet-width) {
-    padding: 54px 20px 138px 330px;
+    min-height: 276px;
+    padding-top: 54px;
+    padding-bottom: 109px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 17px 166px 67px 500px;
+    min-height: 345px;
+    padding-top: 17px;
+    padding-bottom: 67px;
+
     background-color: @color-gray;
   }
 }
 
+.research__content-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding-top: 48px;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 534px;
+    padding-top: 98px;
+  }
+}
+
 .research__slogan {
+  margin: 0;
+
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -24,7 +47,7 @@
 }
 
 .research__text {
-
+  margin: 0;
 }
 
 .research__link {

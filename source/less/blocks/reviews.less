@@ -1,15 +1,22 @@
 .reviews {
+}
+
+.reviews-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px 50px 20px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   @media (min-width: @tablet-width) {
-    padding: 109px 20px 20px 20px;
+    padding-top: 0;
+    padding-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 72px 130px 41px 130px;
+    padding-top: 72px;
+    padding-bottom: 41px;
   }
 }
 
@@ -24,10 +31,11 @@
 }
 
 .reviews__text {
+  margin: 0;
+
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-
 }
 
 .reviews__auhtor {
@@ -47,11 +55,13 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    order: 2;
+    order: 3;
   }
 }
 
 .reviews__toggles {
+  max-width: 256px;
+
   @media (min-width: @desktop-width) {
     display: none;
   }

@@ -4,16 +4,14 @@
 
 .slider__toggles {
   .list();
-  display: flex;
-
-}
-
-.slider__toggles-item:not(:last-child) {
-  margin-right: 19px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 6px);
+  gap: 19px;
 }
 
 .slider__toggle {
   .button();
+  
   width: 6px;
   height: 6px;
   background-color: @color-blue;
