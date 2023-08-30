@@ -1,0 +1,37 @@
+.price-table {
+
+}
+
+.price-table__head {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: @color-white;
+  background-color: @color-blue;
+
+  &--empty {
+    background-color: transparent;
+  }
+}
+
+.price-table__head-name {
+  font-weight: 700;
+}
+
+.price-table__head-value {
+  font-weight: 300;
+}
+
+.price-table__cell {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+
+  &--yes::before {
+    content: "Yes";
+  }
+
+  &--no::before {
+    content: "No";
+  }
+}

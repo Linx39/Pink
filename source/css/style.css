@@ -416,7 +416,7 @@ img {
   .information__list {
     gap: 46px;
     width: 50%;
-    margin-left: 50%;
+    margin-left: auto;
     padding: 84px 0 49px 0;
   }
 }
@@ -491,7 +491,7 @@ img {
 .research__link {
   color: #D22856;
 }
-.reviews-wrapper {
+.reviews__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -499,13 +499,13 @@ img {
   padding-bottom: 50px;
 }
 @media (min-width: 660px) {
-  .reviews-wrapper {
+  .reviews__wrapper {
     padding-top: 0;
     padding-bottom: 15px;
   }
 }
 @media (min-width: 1200px) {
-  .reviews-wrapper {
+  .reviews__wrapper {
     padding-top: 72px;
     padding-bottom: 41px;
   }
@@ -519,6 +519,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 .reviews__text {
   margin: 0;
@@ -554,51 +555,24 @@ img {
     display: none;
   }
 }
-.price__wrapper {
+.price {
   background-color: #F2F2F2;
 }
-.price__table-wrapper {
+.price__wrapper {
   padding: 106px 0 49px 0;
 }
 @media (min-width: 660px) {
-  .price__table-wrapper {
+  .price__wrapper {
     padding: 94px 20px 70px 20px;
   }
 }
 @media (min-width: 1200px) {
-  .price__table-wrapper {
+  .price__wrapper {
     padding: 159px 130px 98px 130px;
   }
 }
 .price__table {
   width: 100%;
-}
-.price__table-header {
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #283645;
-}
-.price__table-header--empty {
-  background-color: transparent;
-}
-.price__table-header-name {
-  font-weight: 700;
-}
-.price__table-header-value {
-  font-weight: 300;
-}
-.price__table-cell {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: left;
-}
-.price__table-cell--yes::before {
-  content: "Yes";
-}
-.price__table-cell--no::before {
-  content: "No";
 }
 .price__toggles {
   max-width: 256px;
@@ -608,17 +582,47 @@ img {
     display: none;
   }
 }
+.price-table__head {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #283645;
+}
+.price-table__head--empty {
+  background-color: transparent;
+}
+.price-table__head-name {
+  font-weight: 700;
+}
+.price-table__head-value {
+  font-weight: 300;
+}
+.price-table__cell {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+}
+.price-table__cell--yes::before {
+  content: "Yes";
+}
+.price-table__cell--no::before {
+  content: "No";
+}
 .contacts__wrapper {
-  padding: 47px 20px 41px 20px;
+  padding-top: 47px;
+  padding-bottom: 41px;
 }
 @media (min-width: 660px) {
   .contacts__wrapper {
-    padding: 55px 20px 30px 20px;
+    padding-top: 55px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
   .contacts__wrapper {
-    padding: 74px 130px 26px 130px;
+    padding-top: 74px;
+    padding-bottom: 26px;
   }
 }
 .contacts__slogan {
@@ -676,18 +680,21 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media (min-width: 660px) {
   .page-footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px 20px 40px 20px;
+    padding-top: 36px;
+    padding-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
   .page-footer-wrapper {
-    padding: 70px 130px 75px 130px;
+    padding-top: 70px;
+    padding-bottom: 75px;
   }
 }
 .page-footer__social-list {
