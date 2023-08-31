@@ -1,14 +1,23 @@
 .form-wrapper {
-  width: 278px;
-  padding: 0 22px;
+  // width: 276px;
+  // padding: 0 22px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 616px;
+    padding: 0 22px;
   }
 
   @media (min-width: @desktop-width) {
     width: 936px;
     padding: 0 132px;
+  }
+}
+
+.form-wrapper__group {
+  @media (max-width: @mobile-width-only) {
+    width: 276px;
+    margin: 0 auto;
+    padding: 0 22px;
   }
 }
