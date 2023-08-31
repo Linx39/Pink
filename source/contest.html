@@ -28,7 +28,7 @@
               </a>
             </li>
             <li class="site-menu__item">
-              <a class="site-menu__link" href="photo.html">
+              <a class="site-menu__link" href="catalog.html">
                 Фотографии
               </a>
             </li>
@@ -57,18 +57,20 @@
 
     <main class="page-inner">
       <section class="contest">
-        <h2 class="visually-hidden">Конкурс </h2>
+        <div class="contest__head-wrapper wrapper">
+          <h2 class="visually-hidden">Конкурс </h2>
 
-        <p class="contest__description">
-          Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!
-          <span>Пожалуйста, заполните форму ниже:</span>
-        </p>
+          <p class="contest__description">
+            Поделитесь своей историей и получите
+            шанс выиграть ценный приз — 1000
+            миль на вашу бонусную карту!
+            <span>Пожалуйста, заполните форму ниже:</span>
+          </p>
+        </div>
 
-        <form class="contest__form form-wrapper" action="https://echo.htmlacademy.ru/" action="post">
-          <fieldset class="contest__form-group form-wrapper__user">
-            <div class="contest__form-group-wrapper">
+        <form class="contest__form form-wrapper form-grid-container" action="https://echo.htmlacademy.ru/" action="post">
+          <fieldset class="contest__form-group form-grid-container__user">
+            <div class="contest__form-group-wrapper form-wrapper__group ">
               <legend class="visually-hidden">ФИО</legend>
 
               <label class="contest__form-label" for="surname">
@@ -88,8 +90,8 @@
             </div>
           </fieldset>
 
-          <fieldset class="contest__form-group form-wrapper__achievements contest__form-group--controls controls">
-            <div class="contest__form-group-wrapper">
+          <fieldset class="contest__form-group contest__form-group--controls controls form-grid-container__achievements">
+            <div class="contest__form-group-wrapper form-wrapper__group ">
               <legend class="controls__legend">
                 Ваши безбашенные
                 достижения в путешествии
@@ -147,8 +149,8 @@
             </div>
           </fieldset>
 
-          <fieldset class="contest__form-group form-wrapper__contacts">
-            <div class="contest__form-group-wrapper">
+          <fieldset class="contest__form-group form-grid-container__contacts">
+            <div class="contest__form-group-wrapper form-wrapper__group ">
               <legend class="visually-hidden">Контактные данные</legend>
 
               <label class="contest__form-label" for="phone">
@@ -164,8 +166,8 @@
           </fieldset>
 
 
-          <fieldset class="contest__form-group form-wrapper__applications contest__form-group--controls controls">
-            <div class="contest__form-group-wrapper">
+          <fieldset class="contest__form-group contest__form-group--controls controls form-grid-container__applications">
+            <div class="contest__form-group-wrapper form-wrapper__group ">
               <legend class="controls__legend">
                 С каким приложением
                 путешествовали?
@@ -199,8 +201,8 @@
             </div>
           </fieldset>
 
-          <fieldset class="contest__form-group form-wrapper__rewiew">
-            <div class="contest__form-group-wrapper">
+          <fieldset class="contest__form-group form-grid-container__rewiew">
+            <div class="contest__form-group-wrapper form-wrapper__group ">
               <legend class="visually-hidden">Комментарий пользователя</legend>
 
               <label class="contest__form-label" for="comment">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
@@ -209,13 +211,15 @@
             </div>
           </fieldset>
 
-          <div class="contest__form-group-button form-wrapper__button">
-            <button class="contest__form-submit contest__button" type="submit">Отправить форму</button>
+          <fieldset class="contest__form-group contest__form-group-button form-grid-container__button">
+            <div class="contest__form-group-wrapper form-wrapper__group ">
+              <button class="contest__form-submit contest__button" type="submit">Отправить форму</button>
 
-            <p class="contest__form-footnote">
-              <span class="contest__form-footnote-mark">*</span>— обязательные поля
-            </p>
-          </div>
+              <p class="contest__form-footnote">
+                <span class="contest__form-footnote-mark">*</span>— обязательные поля
+              </p>
+            </div>
+          </fieldset>
 
           <div class="contest__popup contest__popup--error popup-container">
             <div class="contest__popup-content">
@@ -249,35 +253,37 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <img src="img/logo/logo-small-black.svg" width="145" height="40" alt="Логотип приложения Pink.">
-      </div>
+      <div class="page-footer-wrapper wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo/logo-small-black.svg" width="145" height="40" alt="Логотип приложения Pink.">
+        </div>
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="page-footer__social social">
+          <ul class="page-footer__social-list social__list">
+            <li class="social__item">
+              <a class="social__link">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

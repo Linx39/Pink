@@ -1,56 +1,14 @@
 .form-wrapper {
-  display: grid;
-
-  grid-template-areas:
-    "user"
-    "achievements"
-    "contacts"
-    "applications"
-    "rewiew"
-    "button";
+  width: 278px;
+  padding: 0 22px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    grid-template-areas:
-      "user"
-      "applications"
-      "contacts"
-      "achievements"
-      "rewiew"
-      "button";
-    row-gap: 70px;
-
+    width: 616px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-areas:
-      "user applications"
-      "contacts contacts"
-      "achievements achievements"
-      "rewiew rewiew"
-      "button button";
+    width: 936px;
+    padding: 0 132px;
   }
-}
-
-.form-wrapper__user {
-  grid-area: user;
-}
-
-.form-wrapper__achievements {
-  grid-area: achievements;
-}
-
-.form-wrapper__contacts {
-  grid-area: contacts;
-}
-
-.form-wrapper__applications {
-  grid-area: applications;
-}
-
-.form-wrapper__rewiew {
-  grid-area: rewiew;
-}
-
-.form-wrapper__button {
-  grid-area: button;
 }

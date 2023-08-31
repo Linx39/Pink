@@ -1,0 +1,57 @@
+.form-grid-container {
+  display: grid;
+
+  grid-template-areas:
+    "user"
+    "achievements"
+    "contacts"
+    "applications"
+    "rewiew"
+    "button";
+
+  @media (min-width: @tablet-width) {
+    grid-template-areas:
+      "user"
+      "applications"
+      "contacts"
+      "achievements"
+      "rewiew"
+      "button";
+    row-gap: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 431px 431px;
+    gap: 74px 69px;
+    grid-template-areas:
+      "user applications"
+      "contacts contacts"
+      "achievements achievements"
+      "rewiew rewiew"
+      "button button";
+  }
+}
+
+.form-grid-container__user {
+  grid-area: user;
+}
+
+.form-grid-container__achievements {
+  grid-area: achievements;
+}
+
+.form-grid-container__contacts {
+  grid-area: contacts;
+}
+
+.form-grid-container__applications {
+  grid-area: applications;
+}
+
+.form-grid-container__rewiew {
+  grid-area: rewiew;
+}
+
+.form-grid-container__button {
+  grid-area: button;
+}

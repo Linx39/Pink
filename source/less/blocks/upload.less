@@ -1,25 +1,30 @@
 .upload {
 }
 
-.upload__slogan {
-  padding: 49px 20px 52px 20px;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
+.upload__head-wrapper {
+  padding-top: 49px;
+  padding-bottom: 52px;
 
   @media (min-width: @tablet-width) {
-    padding: 73px 20px 78px 20px;
+    padding-top: 73px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 67px 130px 75px 130px;
+    padding-top: 67px;
+    padding-bottom: 75px;
   }
 }
 
-.upload__form-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.upload__slogan {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.upload__content {
   background-color: @color-gray;
 
   @media (min-width: @desktop-width) {
@@ -27,24 +32,42 @@
   }
 }
 
-.upload__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 280px;
-  padding: 20px 20px 41px 20px;
+.upload__content-wrapper {
+  padding-top: 20px;
+  padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 620px;
-    padding: 57px 20px 54px 20px;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 800px;
-    padding: 57px 80px 57px 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.upload__form-wrapper {
+  @media (min-width: @desktop-width) {
+    padding: 57px 60px 57px 80px;
+
     background-color: @color-gray;
+  }
+}
+
+.upload__form {
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 42px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 300px 275px;
+    gap: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 300px 410px;
+    gap: 90px;
   }
 }
 
@@ -52,18 +75,6 @@
   border: none;
   margin: 0;
   padding: 0;
-}
-
-.upload__form-group-wrapper {
-  width: 280px;
-
-  @media (min-width: @tablet-width) {
-    width: 275px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 410px;
-  }
 }
 
 .upload__effects-group {
@@ -98,7 +109,6 @@
 }
 
 .upload__scales-list {
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -117,8 +127,12 @@
 }
 
 .upload__form-button {
-  width: 260px;
+  width: 280px;
   height: 55px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 183px;
