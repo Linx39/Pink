@@ -170,7 +170,9 @@ img {
 }
 @media (min-width: 1200px) {
   .navigation-wrapper {
+    width: 940px;
     padding: 0 130px;
+    margin: 0 auto;
   }
 }
 .navigation-wrapper__bar {
