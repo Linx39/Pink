@@ -1,14 +1,14 @@
 .wrapper {
-  width: 280px;
+  width: @mobile-width - 40;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
+    width: @tablet-width - 40;
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
+    width: @desktop-width - 260;
     padding: 0 130px;
   }
 }
