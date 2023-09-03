@@ -1,97 +1,42 @@
 .page-header {
   color: @color-white;
   background-color: @color-dark-blue;
-  background-image: url("../../img/back-header-small.png");
-  background-size: auto;
+  background-image: url("../../img/back-header-mobile.png");
+  background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
 
-.page-header__navigation {
+.page-header__nav {
   background-color: rgba(@color-black, 0.3);
 }
 
-.page-header__navigation-wrapper {
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.page-header__main-nav {
+  width: @mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
   }
-}
-
-.page-header__navigation--opened .page-header__navigation-wrapper {
-  background-color: @color-blue;
 
   @media (min-width: @desktop-width) {
-    background-color: transparent;
+    width: @desktop-width - 2 * @desktop-padding;
+    padding-left: @desktop-padding;
+    padding-right: @desktop-padding;
   }
 }
 
 .page-header__bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 66px;
-
-  @media (min-width: @tablet-width) {
-    height: 110px;
-  }
-}
-
-.page-header__navigation--opened .page-header__bar {
-  height: 69px;
-}
-
-.page-header__logo img {
-  width: 74px;
-  height: 23px;
-}
-
-.page-header__toggle {
-  .button();
-
-  position: relative;
-
-  width: 50px;
-  height: 24px;
-
-  &:hover svg {
-    fill: @color-pink;
-  }
-
-  &:active svg {
-    opacity: 0.3;
-  }
+  padding: 0 @mobile-padding;
 
   @media (min-width: @desktop-width) {
-    display: none;
+    width: 147px;
+    padding: 0;
   }
-}
-
-.page-header__navigation--opened .page-header__toggle {
-  width: 23px;
-  height: 23px;
-  margin-right: 3px;
-}
-
-.page-header__navigation--closed .page-header__toggle-icon--close {
-  display: none;
-}
-
-.page-header__navigation--opened .page-header__toggle-icon--open {
-  display: none;
 }
 
 .page-header__menu {
-}
-
-.page-header__navigation--opened .page-header__menu {
-  display: block;
-
-  // background-color: @color-blue;
-}
-
-.page-header__navigation--closed .page-header__menu {
-  display: none;
+  @media (min-width: @desktop-width) {
+    width: 620px;
+  }
 }
