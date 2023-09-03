@@ -6,10 +6,7 @@
     justify-content: space-between;
     align-items: center;
 
-    width: @desktop-width - 2 * @desktop-padding;
-    padding-left: @desktop-padding;
-    padding-right: @desktop-padding;
-    margin: 0 auto;
+    padding: 30.5px @desktop-padding;
   }
 
   &--opened {
@@ -21,19 +18,16 @@
   }
 }
 
-.main-nav__bar-wrapper {
+.main-nav__bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  width: @mobile-width - 2 * @mobile-padding;
-  padding: 0 @mobile-padding;
-  margin: 0 auto;
-  height: 66px;
+  padding: 21px @mobile-padding;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - 2 * @tablet-padding;
-    height: 110px;
+    padding-top: 43px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,8 +39,9 @@
 .main-nav--opened .main-nav__bar {
   box-shadow: 0 1px 0 @color-black;
 
-  @media (max-width: @mobile-width-only) {
-    height: 69px;
+  @media (max-width: (@mobile-width-only)) {
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,6 +52,8 @@
 .main-nav__logo {
   width: 74px;
   height: 23px;
+
+  cursor: pointer;
 
   &:hover svg {
     fill: @color-pink;
@@ -81,6 +78,7 @@
   }
 
   &:active svg {
+    fill: @color-white;
     opacity: 0.3;
   }
 
@@ -92,7 +90,10 @@
 .main-nav--opened .main-nav__toggle {
   width: 23px;
   height: 23px;
-  margin-right: 3px;
+
+  @media (max-width: (@mobile-width-only)) {
+    margin-right: 3px;
+  }
 }
 
 .main-nav--opened .main-nav__toggle-icon--open {
@@ -103,7 +104,7 @@
   display: none;
 }
 
-.page-header__menu {
+.main-nav__menu {
   @media (min-width: @desktop-width) {
     width: 620px;
   }
@@ -114,7 +115,9 @@
 }
 
 .main-nav--closed .main-nav__menu {
-  display: none;
+  @media (max-width: (@desktop-width - 1)) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -134,14 +137,14 @@
     box-shadow: none;
 
     &--current {
-      outline: 2px solid @color-white;
+      box-shadow: 0 2px 0 @color-white;
     }
   }
 }
 
 .main-nav__link {
   .button();
-  padding: 15.5px;
+  padding: 15.5px 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -149,7 +152,7 @@
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 18px;
     text-transform: capitalize;
   }
@@ -159,6 +162,7 @@
   }
 
   &:active {
+    color: @color-white;
     opacity: 0.3;
   }
 }
