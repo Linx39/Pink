@@ -1,8 +1,16 @@
 .page-header {
   color: @color-white;
   background-color: @color-dark-blue;
-  background-image: url("../../img/back-header-mobile.png");
-  background-size: cover;
+  background-image: url("../../img/back-header-desktop.png");
+  background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100% auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 100% auto;
+  }
 }

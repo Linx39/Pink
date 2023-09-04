@@ -9,7 +9,7 @@
 
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__bar">
           <a class="main-nav__logo">
             <svg  class="main-nav__logo-icon" width="74" height="23" viewBox="0 0 74 23" aria-hidden="true" focusable="false" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -75,23 +75,25 @@
               Скачать приложение
             </a>
 
-            <ul class="intro__logo-list logo-list">
-              <li class="logo-item logo-item--apple">
-                <a class="logo-link" href="">
-                  <span class="visually-hidden">Логотип Apple</span>
-                </a>
-              </li>
-              <li class="logo-item logo-item--android">
-                <a class="logo-link" href="">
-                  <span class="visually-hidden">Логотип Android</span>
-                </a>
-              </li>
-              <li class="logo-item logo-item--microsoft">
-                <a class="logo-link" href="">
-                  <span class="visually-hidden">Логотип Microsoft</span>
-                </a>
-              </li>
-            </ul>
+            <div class="intro__logo-list">
+              <ul class="logo-list">
+                <li class="logo-item logo-item--apple">
+                  <a class="logo-link" href="">
+                    <span class="visually-hidden">Логотип Apple</span>
+                  </a>
+                </li>
+                <li class="logo-item logo-item--android">
+                  <a class="logo-link" href="">
+                    <span class="visually-hidden">Логотип Android</span>
+                  </a>
+                </li>
+                <li class="logo-item logo-item--microsoft">
+                  <a class="logo-link" href="">
+                    <span class="visually-hidden">Логотип Microsoft</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             <p class="intro__description">
               Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
@@ -111,7 +113,7 @@
           </p>
 
           <p class="information__slogan">
-            Нам есть, что вам предложить!
+            Нам есть, что вам <br> предложить!
           </p>
         </div>
 
@@ -354,5 +356,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const navMain = document.querySelector('.main-nav');
+      const navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', () =>
+        {if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        }
+      );
+    </script>
   </body>
 </html>

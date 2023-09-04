@@ -1,13 +1,36 @@
 .logo-list {
   .list();
-  display: flex;
-  justify-content: space-between;
-  width: 204px;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: 56px;
+  gap: 35px;
+  align-items: center;
 }
 
 .logo-link {
   .button();
+}
+
+.logo-item--apple .logo-link {
   width: 47px;
-  height: 36px;
-  background-color: red;
+  height: 56px;
+  background-image: url("../../img/logo-apps/apple-logo.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.logo-item--android .logo-link {
+  width: 43px;
+  height: 47px;
+  background-image: url("../../img/logo-apps/android-logo.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.logo-item--microsoft .logo-link {
+  width: 44px;
+  height: 41px;
+  background-image: url("../../img/logo-apps/microsoft-logo.png");
+  background-size: auto;
+  background-repeat: no-repeat;
 }

@@ -24,12 +24,20 @@
   line-height: 29px;
   text-align: center;
 
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-of-type) {
+      margin-bottom: 18px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 0 16px;
+    font-size: 40px;
+    line-height: 54.5px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 80px;
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
@@ -78,15 +86,28 @@
 
 .information__title {
   margin: 0;
+  margin-bottom: 24px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .information__description {
   margin: 0;
 
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

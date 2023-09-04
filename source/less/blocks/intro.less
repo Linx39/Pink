@@ -19,7 +19,7 @@
 }
 
 .intro__inner-wrapper {
-  height: 110px;
+  min-height: 110px;
   padding-top: 36px;
   padding-bottom: 25px;
 
@@ -54,19 +54,61 @@
   font-weight: 300;
   line-height: 33px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .intro__slogan {
   margin: 0;
+  margin-bottom: 348px;
 
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 51px;
+
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .intro__download-button {
+  margin-bottom: 32px;
   border-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.intro__logo-list {
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .intro__description {
