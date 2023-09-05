@@ -3,15 +3,39 @@
 
 .social__list {
   .list();
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 40px);
-  gap: 14px;
 }
 
 .social__link {
   .button();
-  width: 40px;
-  height: 40px;
-  background-color: red;
+
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(@color-blue, 0.1);
+  border-radius: 50%;
+
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    border-color: @color-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+    // background-color: rgba(@color-white, 0.3);
+    border-color: rgba(@color-blue, 0.1); //неправильно
+  }
+}
+
+.social__item--twitter .social__link {
+  background-image: url("../../img/social/twitter.svg");
+}
+
+.social__item--facebook .social__link {
+  background-image: url("../../img/social/facebook.svg");
+}
+
+.social__item--youtube .social__link {
+  background-image: url("../../img/social/youtube.png");
 }

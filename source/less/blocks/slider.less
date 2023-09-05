@@ -7,13 +7,54 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 6px);
   gap: 19px;
+  align-items: center;
 }
 
 .slider__toggle {
   .button();
-  
+
   width: 6px;
   height: 6px;
   background-color: @color-blue;
+  opacity: 0.3;
   border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--current {
+    width: 12px;
+    height: 12px;
+    background-color: @color-white;
+    border: 3px solid @color-blue;
+    opacity: 1;
+  }
+}
+
+.slider__control {
+  .button();
+
+  width: 22px;
+  height: 41px;
+  background-image: url("../../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }

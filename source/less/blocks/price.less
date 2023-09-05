@@ -3,25 +3,29 @@
 }
 
 .price__wrapper {
-  padding: 106px 0 49px 0;
-  // padding-top: 106px;
-  // padding-bottom: 49px;
+  padding: 103px 0 49px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 94px 20px 70px 20px;
-    // padding-top: 94px;
-    // padding-bottom: 70px;
+    padding: 94px @tablet-padding 70px @tablet-padding;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 159px 130px 98px 130px;
-    // padding-top: 159px;
-    // padding-bottom: 98px;
+    padding: 159px @desktop-padding 98px @desktop-padding;
   }
+}
+
+.price__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .price__table {
   width: 100%;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 45px;
+  }
 }
 
 .price__toggles {

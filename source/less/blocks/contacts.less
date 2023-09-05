@@ -18,11 +18,26 @@
 
 .contacts__slogan {
   margin: 0;
+  margin-bottom: 45px;
 
-  font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 300;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
+
+    font-size: 40px;
+    line-height: 44.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .contacts__list {
@@ -43,23 +58,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  min-width: 241px;
   margin: 0 auto;
+
+  &--phone {
+    margin-bottom: 31px;
+  }
+
+  &--email {
+    margin-bottom: 35px;
+  }
 }
 
 .contacts__subtitle {
-  font-weight: 700;
+  margin-bottom: 13px;
+
   font-size: 18px;
-  line-height: 25px;
+  line-height: 24.5px;
+  font-weight: 700;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__link {
   .button();
-  color: @color-pink;
-  font-weight: 300;
+
   font-size: 24px;
-  line-height: 33px;
+  line-height: 32.6px;
+  font-weight: 300;
   text-align: center;
+  color: @color-pink;
 }
 
 .contacts__map img {

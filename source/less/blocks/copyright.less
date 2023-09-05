@@ -1,13 +1,32 @@
 .copyright {
-
+  display: flex;
+  align-items: center;
 }
 
 .copyright__text {
+  margin-right: 15px;
+
   font-size: 14px;
   line-height: 18px;
-  text-align: left;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 13px;
+
+    font-size: 18px;
+  }
 }
 
 .copyright__link {
   .button();
+
+  width: 27px;
+  height: 34px;
+
+  &:hover svg {
+    fill: @color-blue;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
