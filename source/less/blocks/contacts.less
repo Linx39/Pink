@@ -96,6 +96,16 @@
   font-weight: 300;
   text-align: center;
   color: @color-pink;
+
+  &:hover {
+    color: @color-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(@color-blue, 30%);
+    text-decoration: none;
+  }
 }
 
 .contacts__map img {

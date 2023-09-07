@@ -84,10 +84,24 @@
 }
 
 .intro__download-button {
+  width: 280px;
   margin-bottom: 32px;
+
   border-color: @color-white;
 
+  &:hover {
+    color: @color-pink;
+    background-color: @color-white;
+    box-shadow: 0 5px 7px fade(@color-light-black, 75%);
+  }
+
+  &:active {
+    color: fade(@color-pink, 30%);
+    box-shadow: none;
+  }
+
   @media (min-width: @tablet-width) {
+    width: 300px;
     margin-bottom: 46px;
   }
 
@@ -96,7 +110,7 @@
   }
 }
 
-.intro__logo-apps {
+.intro__platforms {
   margin: 0 auto;
   margin-bottom: 28px;
 
@@ -109,9 +123,9 @@
   }
 }
 
-.intro__logo-list {
+.intro__platforms-list {
+  display: grid;
   grid-template-columns: min-content min-content min-content;
-  grid-template-rows: 56px;
   gap: 35px;
   align-items: center;
 
