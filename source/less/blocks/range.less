@@ -2,7 +2,33 @@
 
 }
 
-.range-scale {
+.range__scale {
+  position: relative;
   height: 2px;
   background-color: @color-blue;
+}
+
+.range__bar {
+  position: absolute;
+  height: 2px;
+}
+
+.range__toggle {
+  .button();
+
+  position: absolute;
+  top: -6px;
+  right: -7px;
+
+  width: 14px;
+  height: 14px;
+  border: 2px solid @color-pink;
+  border-radius: 50%;
+
+  background-color: @color-white;
+
+  &:hover,
+  &:active {
+    background-color: @color-pink;
+  }
 }

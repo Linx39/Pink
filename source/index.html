@@ -9,7 +9,7 @@
 
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__nav main-nav main-nav--closed">
         <div class="main-nav__bar">
           <a class="main-nav__logo">
             <svg  class="main-nav__logo-icon" width="74" height="23" viewBox="0 0 74 23" aria-hidden="true" focusable="false" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -58,8 +58,8 @@
         </div>
       </nav>
 
-      <section class="page-header__intro">
-        <div class="intro intro--main wrapper">
+      <section class="page-header__intro intro">
+        <div class="intro__main-wrapper wrapper">
           <div class="intro__content">
             <h1 class="visually-hidden">Приложение Pink</h1>
 
@@ -71,7 +71,7 @@
               Взгляните на жизнь иначе!
             </p>
 
-            <a class="intro__download-button app-button" href="">
+            <a class="intro__download-button" href="">
               Скачать приложение
             </a>
 
@@ -214,7 +214,7 @@
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Прайс</h2>
 
-          <div class="price__window">
+          <div class="price__table-wrapper">
             <table class="price__table price-table">
               <caption class="visually-hidden">Таблица тарифов</caption>
 
@@ -290,7 +290,6 @@
                     <span class="visually-hidden">Есть</span>
                   </td>
                 </tr>
-
             </table>
           </div>
 
@@ -400,7 +399,8 @@
       </div>
     </footer>
 
-    <script>
+    <script src="../source/js/pink.js"></script>
+    <!-- <script>
       const navMain = document.querySelector('.main-nav');
       const navToggle = document.querySelector('.main-nav__toggle');
 
@@ -416,6 +416,6 @@
           }
         }
       );
-    </script>
+    </script> -->
   </body>
 </html>
