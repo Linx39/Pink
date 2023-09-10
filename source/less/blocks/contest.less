@@ -20,6 +20,10 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .contest__description span {
@@ -27,6 +31,19 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+}
+
+.contest__form {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: @tablet-width - 2 * @desktop-form-padding;
+    padding: 0 @desktop-form-padding;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - 2 * @desktop-form-padding;
+    padding: 0 @desktop-form-padding;
   }
 }
 
@@ -42,9 +59,17 @@
   }
 }
 
+.contest__group {
+  @media (max-width: @mobile-width-only) {
+    width: @mobile-width - 2 * @mobile-form-padding;
+    padding: 0 @mobile-form-padding;
+    margin: 0 auto;
+  }
+}
+
 .contest__group-user {
   @media (max-width: @mobile-width-only) {
-    padding-bottom: 54px;
+    // padding-bottom: 54px;
   }
 
   @media (min-width: @tablet-width) {
