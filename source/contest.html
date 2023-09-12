@@ -67,7 +67,7 @@
 
     <main class="page-inner">
       <section class="contest">
-        <div class="contest__head-wrapper wrapper">
+        <div class="contest__head wrapper">
           <h2 class="visually-hidden">Конкурс </h2>
 
           <p class="contest__description">
@@ -79,157 +79,155 @@
         </div>
 
         <form class="contest__form form-grid-container" action="https://echo.htmlacademy.ru/" action="post">
-          <fieldset class="contest__form-group form-grid-container__user">
-            <div class="contest__group contest__group-user">
+          <div class="contest__group-wrapper form-grid-container__user">
+            <fieldset class="contest__group contest__group-user">
               <legend class="visually-hidden">ФИО</legend>
 
-              <label class="contest__form-label" for="surname">
-                ФАМИЛИЯ:
-                <input class="contest__form-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+              <label class="contest__label contest__label-user" for="surname">
+                <span class="contest__label-title">ФАМИЛИЯ:</span>
+                <input class="contest__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
               </label>
 
-              <label class="contest__form-label" for="name">
-                ИМЯ:
-                <input class="contest__form-field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+              <label class="contest__label contest__label-user" for="name">
+                <span class="contest__label-title">ИМЯ:</span>
+                <input class="contest__field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </label>
 
-              <label class="contest__form-label" for="patronymic">
-                ОТЧЕСТВО:
-                <input class="contest__form-field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              <label class="contest__label contest__label-user" for="patronymic">
+                <span class="contest__label-title">ОТЧЕСТВО:</span>
+                <input class="contest__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </label>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest__form-group contest__form-group--controls controls form-grid-container__achievements">
-            <div class="contest__group contest__group-achievements">
-              <legend class="controls__legend">
-                Ваши безбашенные
-                достижения в путешествии
+          <div class="contest__group-wrapper contest__group-wrapper--controls form-grid-container__achievements">
+            <fieldset class="contest__group contest__group-achievements">
+              <legend class="contest__legend">
+                Ваши безбашенные<br>достижения в путешествии
               </legend>
 
-              <ul class="contest__list-checkbox controls__list controls__list--checkbox">
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="checkbox" name="shark" checked>
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Сделал селфи с акулой</span>
+              <ul class="contest__list contest__list--checkbox">
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="shark" checked>
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Сделал селфи с акулой</span>
                   </label>
                 </li>
 
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="checkbox" name="burned" checked>
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Обгорел на пляже</span>
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="burned" checked>
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Обгорел на пляже</span>
                   </label>
                 </li>
 
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="checkbox" name="norris">
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Видел Чака Норриса</span>
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="norris">
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Видел Чака Норриса</span>
                   </label>
                 </li>
 
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="checkbox" name="souvenir">
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Накупил сувениров</span>
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="souvenir">
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Накупил сувениров</span>
                   </label>
                 </li>
 
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="checkbox" name="tower" checked>
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Удержал башню</span>
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="tower" checked>
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Удержал башню</span>
                   </label>
                 </li>
 
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="checkbox" name="hotel">
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Разгромил отель</span>
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="hotel">
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Разгромил отель</span>
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest__form-group form-grid-container__contacts">
-            <div class="contest__group contest__group-contacts">
+          <div class="contest__group-wrapper form-grid-container__contacts">
+            <fieldset class="contest__group contest__group-contacts">
               <legend class="visually-hidden">Контактные данные</legend>
 
-              <label class="contest__form-label" for="phone">
-                НОМЕР ТЕЛЕФОНА
-                <input class="contest__form-field" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              <label class="contest__label contest__label-contacts" for="phone">
+                <span class="contest__label-title">НОМЕР ТЕЛЕФОНА</span>
+                <input class="contest__field" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </label>
 
-              <label class="contest__form-label" for="email">
-                АДРЕС ПОЧТЫ
-                <input class="contest__form-field" type="text" name="email" id="email" placeholder="Введите почту *" required>
+              <label class="contest__label contest__label-contacts" for="email">
+                <span class="contest__label-title">АДРЕС ПОЧТЫ</span>
+                <input class="contest__field" type="text" name="email" id="email" placeholder="Введите почту *" required>
               </label>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
 
-          <fieldset class="contest__form-group contest__form-group--controls controls form-grid-container__applications">
-            <div class="contest__group contest__group-applications">
-              <legend class="controls__legend">
-                С каким приложением
-                путешествовали?
+          <div class="contest__group-wrapper contest__group-wrapper--controls form-grid-container__applications">
+            <fieldset class="contest__group contest__group-applications controls">
+              <legend class="contest__legend">
+                С каким приложением<br>путешествовали?
               </legend>
 
-              <ul class="contest__list-radio controls__list controls__list--radio">
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="radio" name="application" value="iOS" checked>
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Pink для iOS</span>
+              <ul class="contest__list contest__list--radio">
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="radio" name="application" value="iOS" checked>
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Pink для iOS</span>
                   </label>
                 </li>
 
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="radio" name="application" value="Android">
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Pink на Android</span>
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="radio" name="application" value="Android">
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Pink на Android</span>
                   </label>
                 </li>
 
-                <li class="controls__item">
-                  <label class="controls__label">
-                    <input class="visually-hidden controls__input" type="radio" name="application" value="Windows">
-                      <span class="controls__label-mark"></span>
-                      <span class="controls__label-text">Windows Phone</span>
+                <li class="contest__item">
+                  <label class="contest__control control">
+                    <input class="visually-hidden control__input" type="radio" name="application" value="Windows">
+                    <span class="contest__mark control__mark"></span>
+                    <span class="control__label">Windows Phone</span>
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest__form-group form-grid-container__rewiew">
-            <div class="contest__group contest__group-rewiew">
-              <legend class="visually-hidden">Комментарий пользователя</legend>
+          <div class="contest__group-wrapper form-grid-container__rewiew">
+            <fieldset class="contest__group contest__group-rewiew">
+              <legend class="contest__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
 
-              <label class="contest__form-label" for="comment">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-              <textarea class="contest__form-field" name="comment" id="comment" placeholder="Можно прям в красках, не
-              стесняясь в выражениях"></textarea>
-            </div>
-          </fieldset>
+              <label class="contest__label" for="comment">
+                <textarea class="contest__field contest__field--textarea" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </label>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest__form-group form-grid-container__button">
-            <div class="contest__group contest__group-button">
-              <button class="contest__form-submit contest__button" type="submit">Отправить форму</button>
+          <div class="contest__group-wrapper form-grid-container__button">
+            <fieldset class="contest__group contest__group-button">
+              <button class="contest__submit contest__button" type="submit">Отправить форму</button>
 
-              <p class="contest__form-footnote">
-                <span class="contest__form-footnote-mark">*</span>— обязательные поля
+              <p class="contest__footnote">
+                <span class="contest__footnote-mark">*</span>— обязательные <span class="contest__footnote-span">для заполнения </span>поля
               </p>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
           <div class="contest__popup contest__popup--error popup-container">
             <div class="contest__popup-content">

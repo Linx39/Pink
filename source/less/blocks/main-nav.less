@@ -1,46 +1,5 @@
 .main-nav {
-  position: relative;
-  background-color: fade(@color-black, 30%);
 
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 30.5px @desktop-padding;
-  }
-}
-
-.main-nav__bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 21px @mobile-padding;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 43px;
-    padding-bottom: 43px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 147px;
-    padding: 0;
-  }
-}
-
-.main-nav--opened .main-nav__bar {
-  background-color: @color-blue;
-
-  @media (max-width: (@mobile-width-only)) {
-    padding-top: 23px;
-    padding-bottom: 23px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: unset;
-    border: none;
-  }
 }
 
 .main-nav__logo {
@@ -60,8 +19,8 @@
 
 .main-nav__toggle {
   .button();
-  width: 50px;
-  height: 24px;
+  // width: 50px;
+  // height: 24px;
 
   &:hover svg {
     fill: @color-pink;
@@ -70,47 +29,13 @@
   &:active svg {
     fill: fade(@color-white, 30%);
   }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.main-nav--opened .main-nav__toggle {
-  width: 23px;
-  height: 23px;
-
-  @media (max-width: (@mobile-width-only)) {
-    margin-right: 3px;
-  }
-}
-
-.main-nav--opened .main-nav__toggle-icon--open {
-  display: none;
-}
-
-.main-nav--closed .main-nav__toggle-icon--close {
-  display: none;
 }
 
 .main-nav__menu {
-  position: absolute;
-  width: 100%;
-  background-color: @color-blue;
   border-top: 1px solid @color-black;
 
   @media (min-width: @desktop-width) {
-    position: static;
-    width: 620px;
-    background-color: unset;
-  }
-}
-
-.main-nav--closed .main-nav__menu {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: block;
+    border: none;
   }
 }
 
@@ -164,27 +89,3 @@
     color: fade(@color-white, 30%);
   }
 }
-
-// .main-nav--nojs .main-nav__toggle {
-//   display: none;
-// }
-
-// .main-nav--nojs .main-nav__menu {
-//   position: static;
-//   display: block;
-// }
-
-// .main-nav--nojs .site-list__item {
-//   display: block;
-// }
-
-// .main-nav--nojs .site-list__item--active a {
-//   padding-right: 21px;
-//   padding-left: 21px;
-//   text-align: left;
-// }
-
-// .main-nav--nojs .user-list__item {
-//   display: block;
-//   background-color: #6a4d38;
-// }

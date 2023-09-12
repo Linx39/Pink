@@ -17,11 +17,11 @@
       "achievements"
       "rewiew"
       "button";
-    row-gap: 70px;
+    gap: 70px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 431px 431px;
+    grid-template-columns: 1fr 1fr;
     gap: 74px 69px;
     grid-template-areas:
       "user applications"
@@ -29,6 +29,7 @@
       "achievements achievements"
       "rewiew rewiew"
       "button button";
+    align-items: end;
   }
 }
 

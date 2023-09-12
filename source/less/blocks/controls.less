@@ -1,20 +1,39 @@
-.controls {
+.control {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 24px;
+  align-items: center;
 }
 
-.controls__legend {
-  color: @color-pink;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
+.control__mark {
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+
+  .control__input[type="radio"] + & {
+    position: relative;
+    border-radius: 50%;
+  }
 }
 
-.controls__list {
-  .list();
+.control__input[type="checkbox"]:checked + .control__mark {
+  background-image: url("../../img/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
+  background-position: center;
 }
 
-.controls__label-text {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  background-color: @color-pink;
+  border-radius: 50%;
+  content: "";
 }
