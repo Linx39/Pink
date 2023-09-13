@@ -373,6 +373,19 @@ img {
     padding: 74px 130px 10px 130px;
   }
 }
+.intro__head {
+  margin-bottom: 341px;
+}
+@media (min-width: 660px) {
+  .intro__head {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro__head {
+    margin-bottom: 36px;
+  }
+}
 .intro__title {
   margin: 0;
   font-size: 24px;
@@ -393,22 +406,25 @@ img {
 }
 .intro__slogan {
   margin: 0;
-  margin-bottom: 355px;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
   text-align: center;
 }
+.intro__slogan br:first-of-type {
+  display: none;
+}
 @media (min-width: 660px) {
   .intro__slogan {
-    margin-bottom: 39px;
     font-size: 40px;
     line-height: 48px;
+  }
+  .intro__slogan br:first-of-type {
+    display: block;
   }
 }
 @media (min-width: 1200px) {
   .intro__slogan {
-    margin-bottom: 51px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -463,16 +479,16 @@ img {
 }
 .intro__platforms {
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 @media (min-width: 660px) {
   .intro__platforms {
-    margin-bottom: 38px;
+    margin-bottom: 31px;
   }
 }
 @media (min-width: 1200px) {
   .intro__platforms {
-    margin-bottom: 58px;
+    margin-bottom: 53px;
   }
 }
 .intro__platforms-list {
@@ -484,8 +500,15 @@ img {
 }
 .intro__description {
   margin: 0;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 660px) {
+  .intro__description {
+    font-size: 18px;
+  }
 }
 .platforms__list {
   margin: 0;
