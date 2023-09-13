@@ -2,9 +2,19 @@
   color: @color-white;
   background-color: @color-dark-blue;
   background-image: url("../../img/back-mobile.png");
-  background-size: 100% auto;
+  background-size: 100% 462px;
   background-position: center top;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/back-tablet.png");
+    background-size: 100% 729px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/back-desktop.png");
+    background-size: 100% 853px;
+  }
 }
 
 .page-header__nav {
@@ -28,4 +38,3 @@
     padding: 0;
   }
 }
-
