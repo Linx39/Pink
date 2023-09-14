@@ -1,22 +1,17 @@
 .reviews {
-}
-
-.reviews__wrapper {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding: 50px @mobile-padding 40px @mobile-padding;
 
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 72px;
-    padding-bottom: 41px;
+    padding: 72px @desktop-padding 41px @desktop-padding;
   }
 }
 
-.reviews__content {
+.reviews__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;

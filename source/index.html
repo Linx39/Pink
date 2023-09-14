@@ -60,17 +60,13 @@
 
       <section class="page-header__intro intro">
         <div class="intro__wrapper">
-          <div class="intro__head">
+          <div class="page-header__intro-head intro__head">
             <h1 class="visually-hidden">Приложение Pink</h1>
 
             <p class="intro__slogan">
               Взгляните<br> на жизнь<br> иначе!
             </p>
           </div>
-
-            <!-- <div class="intro__img">
-              <img src="img/phone.png" width="320" height="286" alt="Демонстрация приложения.">
-            </div> -->
 
           <div class="page-header__intro-content intro__content">
             <a class="intro__download-button" href="">
@@ -107,7 +103,7 @@
 
     <main class="page-main">
       <section class="information">
-        <div class="information__head wrapper">
+        <div class="information__head">
           <h2 class="visually-hidden">Информация</h2>
 
           <p class="information__slogan">
@@ -120,36 +116,59 @@
         </div>
 
         <div class="information__content">
-          <div class="information__content-wrapper wrapper">
-            <ul class="information__list">
-              <li class="information__item">
-                <h3 class="information__title">Поднимает настроение</h3>
-                <p class="information__description">
-                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-                </p>
-              </li>
-              <li class="information__item">
-                <h3 class="information__title">Меняет мир вокруг</h3>
-                <p class="information__description">
-                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-                </p>
-              </li>
-              <li class="information__item">
-                <h3 class="information__title">Заводит новых друзей</h3>
-                <p class="information__description">
-                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-                </p>
-              </li>
-            </ul>
+          <div class="information__content-wrapper">
+            <div class="information__features">
+              <ul class="information__features-list">
+                <li class="information__features-item">
+                  <h3 class="information__title">Поднимает настроение</h3>
+                  <p class="information__description">
+                    Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                  </p>
+                </li>
+                <li class="information__features-item">
+                  <h3 class="information__title">Меняет мир вокруг</h3>
+                  <p class="information__description">
+                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                  </p>
+                </li>
+                <li class="information__features-item">
+                  <h3 class="information__title">Заводит новых друзей</h3>
+                  <p class="information__description">
+                    Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="information__images">
+              <ul class="information__images-list">
+                <li class="information__images-item">
+                  <h3 class="visually-hidden">Реальное фото</h3>
+                  <div class="information__images-container information__images-container--real"></div>
+                </li>
+                <li class="information__images-item">
+                  <h3 class="visually-hidden">Розовое фото</h3>
+                  <div class="information__images-container information__images-container--pink"></div>
+                </li>
+                <li class="information__images-item information__images-item--current">
+                  <h3 class="visually-hidden">Фото со смайликом</h3>
+                  <div class="information__images-container information__images-container--smile"></div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="research">
-        <div class="research__wrapper wrapper">
-          <div class="research__content">
-            <h2 class="visually-hidden">Исследования</h2>
+        <div class="research__wrapper">
+          <h2 class="visually-hidden">Исследования</h2>
 
+          <div class="research__intro">
+            <div class="research__image-container"></div>
+          </div>
+
+          <div class="research__content">
             <p class="research__slogan">
               Эффект <br> на 24 часа!
             </p>
@@ -166,49 +185,47 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper wrapper">
-          <div class="reviews__content">
-            <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <h2 class="visually-hidden">Отзывы</h2>
 
-            <ul class="reviews__list slider">
-              <li class="reviews__item slider__item">
-                <blockquote class="reviews__blockquote">
-                  <cite class="reviews__auhtor">Николай Петров</cite>
-                  <span class="reviews__auhtor-details">25 лет, водитель трамвая</span>
-                  <p class="reviews__text">
-                    «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                  </p>
-                </blockquote>
-              </li>
-            </ul>
+          <ul class="reviews__list slider">
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <cite class="reviews__auhtor">Николай Петров</cite>
+                <span class="reviews__auhtor-details">25 лет, водитель трамвая</span>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </blockquote>
+            </li>
+          </ul>
 
-            <div class="reviews__controls slider__controls">
-              <button class="reviews__control slider__control slider__control--prev" type="button">
-                <span class="visually-hidden">Предыдущее фото</span>
-              </button>
-              <button class="reviews__control slider__control slider__control--next" type="button">
-                <span class="visually-hidden">Следующее фото</span>
-              </button>
-            </div>
-
-            <ul class="reviews__toggles slider__toggles">
-              <li class="slider__toggles-item">
-                <button class="slider__toggle slider__toggle--current" type="button">
-                  <span class="visually-hidden">1</span>
-                </button>
-              </li>
-              <li class="slider__toggles-item">
-                <button class="slider__toggle" type="button">
-                  <span class="visually-hidden">2</span>
-                </button>
-              </li>
-              <li class="slider__toggles-item">
-                <button class="slider__toggle" type="button">
-                  <span class="visually-hidden">3</span>
-                </button>
-              </li>
-            </ul>
+          <div class="reviews__controls slider__controls">
+            <button class="reviews__control slider__control slider__control--prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="reviews__control slider__control slider__control--next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
           </div>
+
+          <ul class="reviews__toggles slider__toggles">
+            <li class="slider__toggles-item">
+              <button class="slider__toggle slider__toggle--current" type="button">
+                <span class="visually-hidden">1</span>
+              </button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">2</span>
+              </button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">3</span>
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -216,7 +233,7 @@
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Прайс</h2>
 
-          <div class="price__table-wrapper">
+          <div class="price__table-window">
             <table class="price__table price-table">
               <caption class="visually-hidden">Таблица тарифов</caption>
 
@@ -316,7 +333,7 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper wrapper">
+        <div class="contacts__content">
           <h2 class="visually-hidden">Контакты</h2>
 
           <p class="contacts__slogan">

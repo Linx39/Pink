@@ -1,13 +1,7 @@
 .price {
-  background-color: @color-gray;
-}
-
-.price__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   padding: 103px 0 49px 0;
+
+  background-color: @color-gray;
 
   @media (min-width: @tablet-width) {
     padding: 94px @tablet-padding 70px @tablet-padding;
@@ -18,10 +12,17 @@
   }
 }
 
-.price__table-wrapper {
+.price__wrapper {
+  @media (max-width: @mobile-width-only) {
+    display: grid;
+    gap: 45px;
+    justify-items: center;
+  }
+}
+
+.price__table-window {
   @media (max-width: @mobile-width-only) {
     width: @mobile-width;
-    margin-bottom: 45px;
 
     overflow: hidden;
   }

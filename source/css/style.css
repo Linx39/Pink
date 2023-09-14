@@ -47,18 +47,13 @@
   margin: 0;
 }
 .wrapper {
-  width: 280px;
+  box-sizing: border-box;
   padding: 0 20px;
-  margin: 0 auto;
 }
 @media (min-width: 660px) {
-  .wrapper {
-    width: 620px;
-  }
 }
 @media (min-width: 1200px) {
   .wrapper {
-    width: 940px;
     padding: 0 130px;
   }
 }
@@ -143,20 +138,20 @@ img {
 .page-header {
   color: #ffffff;
   background-color: #1D2631;
-  background-image: url("../../img/back-mobile.png");
+  background-image: url("../../img/back/back-mobile.png");
   background-size: 100% 462px;
   background-position: center top;
   background-repeat: no-repeat;
 }
 @media (min-width: 660px) {
   .page-header {
-    background-image: url("../../img/back-tablet.png");
+    background-image: url("../../img/back/back-tablet.png");
     background-size: 100% 729px;
   }
 }
 @media (min-width: 1200px) {
   .page-header {
-    background-image: url("../../img/back-desktop.png");
+    background-image: url("../../img/back/back-desktop.png");
     background-size: 100% 853px;
   }
 }
@@ -181,6 +176,24 @@ img {
   .page-header__bar {
     width: 147px;
     padding: 0;
+  }
+}
+.page-header__intro {
+  background-image: url("../../img/phone/phone-mobile.png");
+  background-size: auto;
+  background-position: center top 110px;
+  background-repeat: no-repeat;
+}
+@media (min-width: 660px) {
+  .page-header__intro {
+    background-image: url("../../img/phone/phone-tablet.png");
+    background-position: center top 74px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__intro {
+    background-image: url("../../img/phone/phone-desktop.png");
+    background-position: right top 98px;
   }
 }
 .main-nav {
@@ -546,8 +559,7 @@ img {
   background-image: url("../../img/platforms-logo/microsoft-logo.png");
 }
 .information__head {
-  padding-top: 46px;
-  padding-bottom: 35px;
+  padding: 46px 20px 35px 20px;
 }
 @media (min-width: 660px) {
   .information__head {
@@ -557,8 +569,7 @@ img {
 }
 @media (min-width: 1200px) {
   .information__head {
-    padding-top: 77px;
-    padding-bottom: 66px;
+    padding: 77px 130px 66px 130px;
   }
 }
 .information__slogan {
@@ -587,24 +598,57 @@ img {
 }
 .information__content {
   background-color: #F2F2F2;
+  padding-top: 80px;
+}
+@media (min-width: 660px) {
+  .information__content {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .information__content {
+    padding-bottom: 59px;
+  }
 }
 .information__content-wrapper {
-  padding-top: 80px;
-  padding-bottom: 325px;
+  display: grid;
+  grid-template-rows: min-content 277px;
+  grid-template-areas: "features" "images";
+  gap: 48px;
 }
 @media (min-width: 660px) {
   .information__content-wrapper {
-    padding-top: 0;
-    padding-bottom: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "images features";
+    gap: 0;
   }
 }
 @media (min-width: 1200px) {
   .information__content-wrapper {
-    padding-top: 301px;
-    padding-bottom: 59px;
+    grid-template-columns: auto;
+    grid-template-rows: 301px min-content;
+    grid-template-areas: "images" "features";
+    gap: 59px;
   }
 }
-.information__list {
+.information__features {
+  grid-area: features;
+}
+@media (min-width: 660px) {
+  .information__features {
+    padding: 75px 0 20px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .information__features {
+    padding: 0;
+  }
+}
+.information__images {
+  grid-area: images;
+}
+.information__features-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -612,28 +656,22 @@ img {
   gap: 43px;
 }
 @media (min-width: 660px) {
-  .information__list {
+  .information__features-list {
     gap: 46px;
-    width: 50%;
-    margin-left: auto;
-    padding: 84px 0 49px 0;
   }
 }
 @media (min-width: 1200px) {
-  .information__list {
+  .information__features-list {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 68px;
-    width: 100%;
-    margin-left: 0;
-    padding: 59px 0;
   }
 }
 .information__title {
   margin: 0;
   margin-bottom: 24px;
-  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   text-align: center;
 }
 @media (min-width: 1200px) {
@@ -653,45 +691,154 @@ img {
     line-height: 30px;
   }
 }
+.information__images-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  .information__images-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 68px;
+  }
+}
+.information__images-item {
+  display: none;
+  height: 100%;
+}
+.information__images-item--current {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .information__images-item {
+    display: block;
+  }
+}
+.information__images-container {
+  width: 157px;
+  height: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+@media (min-width: 660px) {
+  .information__images-container {
+    width: 268px;
+    margin: 0;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .information__images-container {
+    width: 186px;
+    margin: 0 auto;
+  }
+}
+.information__images-container--real {
+  background-image: url("../../img/screen/screen-mobile-real.png");
+}
+@media (min-width: 660px) {
+  .information__images-container--real {
+    background-image: url("../../img/screen/screen-tablet-real.png");
+  }
+}
+@media (min-width: 1200px) {
+  .information__images-container--real {
+    background-image: url("../../img/screen/screen-desktop-real.png");
+  }
+}
+.information__images-container--pink {
+  background-image: url("../../img/screen/screen-mobile-pink.png");
+}
+@media (min-width: 660px) {
+  .information__images-container--pink {
+    background-image: url("../../img/screen/screen-tablet-pink.png");
+  }
+}
+@media (min-width: 1200px) {
+  .information__images-container--pink {
+    background-image: url("../../img/screen/screen-desktop-pink.png");
+  }
+}
+.information__images-container--smile {
+  background-image: url("../../img/screen/screen-mobile-smile.png");
+}
+@media (min-width: 660px) {
+  .information__images-container--smile {
+    background-image: url("../../img/screen/screen-tablet-smile.png");
+  }
+}
+@media (min-width: 1200px) {
+  .information__images-container--smile {
+    background-image: url("../../img/screen/screen-desktop-smile.png");
+  }
+}
 @media (max-width: 659px) {
   .research {
     display: none;
   }
 }
+@media (min-width: 660px) {
+  .research {
+    padding: 0 20px;
+  }
+}
 @media (min-width: 1200px) {
   .research {
+    padding: 0 130px;
     background-color: #F2F2F2;
   }
 }
 @media (min-width: 660px) {
   .research__wrapper {
-    min-height: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {
   .research__wrapper {
-    min-height: 429px;
-    background-color: #F2F2F2;
+    grid-template-columns: 2fr 3fr;
+  }
+}
+@media (min-width: 660px) {
+  .research__intro {
+    padding-top: 54px;
+  }
+}
+@media (min-width: 1200px) {
+  .research__intro {
+    padding-top: 17px;
+  }
+}
+@media (min-width: 660px) {
+  .research__image-container {
+    height: 276px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/effect-24--tablet.png");
+  }
+}
+@media (min-width: 1200px) {
+  .research__image-container {
+    height: 345px;
+    background-image: url("../../img/effect-24--desktop.png");
   }
 }
 @media (min-width: 660px) {
   .research__content {
-    width: 50%;
     padding-top: 102px;
-    margin-left: auto;
+    padding-bottom: 58px;
   }
 }
 @media (min-width: 1200px) {
   .research__content {
-    width: 60%;
     padding-top: 115px;
+    padding-bottom: 120px;
   }
-}
-.research__slogan {
-  margin: 0;
 }
 @media (min-width: 660px) {
   .research__slogan {
+    margin: 0;
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 30px;
@@ -732,23 +879,21 @@ img {
     line-height: 30px;
   }
 }
-.reviews__wrapper {
-  padding-top: 50px;
-  padding-bottom: 40px;
+.reviews {
+  padding: 50px 20px 40px 20px;
 }
 @media (min-width: 660px) {
-  .reviews__wrapper {
-    padding-top: 20px;
+  .reviews {
+    padding-top: 50px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .reviews__wrapper {
-    padding-top: 72px;
-    padding-bottom: 41px;
+  .reviews {
+    padding: 72px 130px 41px 130px;
   }
 }
-.reviews__content {
+.reviews__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -843,28 +988,29 @@ img {
   }
 }
 .price {
+  padding: 103px 0 49px 0;
   background-color: #F2F2F2;
 }
-.price__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 103px 0 49px 0;
-}
 @media (min-width: 660px) {
-  .price__wrapper {
+  .price {
     padding: 94px 20px 70px 20px;
   }
 }
 @media (min-width: 1200px) {
-  .price__wrapper {
+  .price {
     padding: 159px 130px 98px 130px;
   }
 }
 @media (max-width: 659px) {
-  .price__table-wrapper {
+  .price__wrapper {
+    display: grid;
+    gap: 45px;
+    justify-items: center;
+  }
+}
+@media (max-width: 659px) {
+  .price__table-window {
     width: 320px;
-    margin-bottom: 45px;
     overflow: hidden;
   }
 }
@@ -1017,20 +1163,18 @@ img {
     display: none;
   }
 }
-.contacts__wrapper {
-  padding-top: 47px;
-  padding-bottom: 41px;
+.contacts__content {
+  padding: 47px 20px 41px 20px;
 }
 @media (min-width: 660px) {
-  .contacts__wrapper {
+  .contacts__content {
     padding-top: 55px;
     padding-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
-  .contacts__wrapper {
-    padding-top: 74px;
-    padding-bottom: 26px;
+  .contacts__content {
+    padding: 74px 130px 26px 130px;
   }
 }
 .contacts__slogan {
@@ -1081,8 +1225,28 @@ img {
 .contacts__item--phone {
   margin-bottom: 31px;
 }
+@media (min-width: 660px) {
+  .contacts__item--phone {
+    margin-bottom: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__item--phone {
+    margin-bottom: 0;
+  }
+}
 .contacts__item--email {
   margin-bottom: 35px;
+}
+@media (min-width: 660px) {
+  .contacts__item--email {
+    margin-bottom: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__item--email {
+    margin-bottom: 0;
+  }
 }
 .contacts__subtitle {
   margin-bottom: 13px;
@@ -1124,6 +1288,9 @@ img {
 .contacts__link:active {
   color: rgba(40, 54, 69, 0.3);
   text-decoration: none;
+}
+.contacts__map img {
+  width: 100%;
 }
 .page-footer__wrapper {
   padding-top: 40px;

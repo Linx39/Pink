@@ -3,40 +3,65 @@
     display: none;
   }
 
+  @media (min-width: @tablet-width) {
+    padding: 0 @mobile-padding;
+  }
+
   @media (min-width: @desktop-width) {
+    padding: 0 @desktop-padding;
     background-color: @color-gray;
   }
 }
 
 .research__wrapper {
   @media (min-width: @tablet-width) {
-    min-height: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 429px;
+    grid-template-columns: 2fr 3fr;
+  }
+}
 
-    background-color: @color-gray;
+.research__intro {
+  @media (min-width: @tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
+  }
+}
+
+.research__image-container {
+  @media (min-width: @tablet-width) {
+    height: 276px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/effect-24--tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 345px;
+    background-image: url("../../img/effect-24--desktop.png");
   }
 }
 
 .research__content {
   @media (min-width: @tablet-width) {
-    width: 50%;
     padding-top: 102px;
-    margin-left: auto;
+    padding-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 60%;
     padding-top: 115px;
+    padding-bottom: 120px;
   }
 }
 
 .research__slogan {
-  margin: 0;
-
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-bottom: 24px;
 
     font-weight: 700;
