@@ -2,42 +2,21 @@
   display: grid;
   grid-template-columns: 1fr;
 
-  padding: 24px @mobile-padding 34px @mobile-padding;
-
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-
-    padding-top: 94px;
-    padding-bottom: 114px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-
-    padding: 99px @desktop-padding 125px @desktop-padding;
   }
 
   &--inner {
     display: block;
-    min-height: 171px;
-    padding: 36px @mobile-padding 10px @mobile-padding;
-
-    @media (min-width: @tablet-width) {
-      min-height: 330px;
-      padding-bottom: 10px;
-    }
-
-    @media (min-width: @desktop-width) {
-      min-height: 284px;
-      padding: 74px @desktop-padding 10px @desktop-padding;
-    }
   }
 }
 
 .intro__head {
-  margin-bottom: 341px;
-
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
   }
@@ -99,10 +78,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (min-width: @tablet-width) {
-    // width: 100%;
-  }
 }
 
 .intro__download-button {
