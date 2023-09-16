@@ -2,8 +2,7 @@
 }
 
 .contest__head {
-  padding-top: 44px;
-  padding-bottom: 13px;
+  padding: 44px @mobile-padding 13px @mobile-padding;
 
   @media (min-width: @tablet-width) {
     padding-top: 100px;
@@ -11,8 +10,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding: 100px @desktop-padding 70px @desktop-padding;
   }
 }
 
@@ -38,13 +36,12 @@
 
 .contest__form {
   @media (min-width: @tablet-width) {
-    box-sizing: border-box;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 0 22px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 130px;
+    padding: 0 132px;
   }
 }
 
@@ -62,7 +59,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  // border: none;
+  border: none;
 }
 
 .contest__group-user {

@@ -2,8 +2,7 @@
 }
 
 .photos__head {
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding: 54px @mobile-padding 60px @mobile-padding;
 
   @media (min-width: @tablet-width) {
     padding-top: 100px;
@@ -11,8 +10,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 100px;
-    padding-bottom: 97px;
+    padding: 100px @desktop-padding 97px @desktop-padding;
   }
 }
 
@@ -51,12 +49,17 @@
   }
 }
 
-.photos__img img{
-  background-size: cover;
+.photos__img img {
+  width: 100%;
 }
 
 .photos__content {
+  padding: 0 @mobile-padding;
+  margin: 0 auto;
 
+  @media (min-width: @desktop-width) {
+    padding: 0 @desktop-padding;
+  }
 }
 
 .photos__list {

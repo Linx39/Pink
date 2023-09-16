@@ -40,16 +40,17 @@
 }
 
 .information__content {
-  background-color: @color-gray;
-
+  padding: 80px @mobile-padding 0 @mobile-padding;
   padding-top: 80px;
+
+  background-color: @color-gray;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 59px;
+    padding: 0 @desktop-padding 59px @desktop-padding;
   }
 }
 
