@@ -4,27 +4,24 @@
   background-image: url("../../img/back/back-mobile.png");
   background-position: center top;
   background-repeat: no-repeat;
-
-  &--main {
-    background-size: 100% 462px;
-  }
-
-  &--inner {
-    background-size: 100% auto;
-  }
+  background-size: 100% auto;
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/back/back-tablet.png");
-
-    &--main {
-      background-size: 100% 729px;
-    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../../img/back/back-desktop.png");
+  }
 
-    &--main {
+  &--promo {
+    background-size: 100% 462px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 100% 729px;
+    }
+
+    @media (min-width: @desktop-width) {
       background-size: 100% 853px;
     }
   }
@@ -54,62 +51,137 @@
 
 .page-header__intro {
   box-sizing: border-box;
+  min-height: 171px;
   padding: 0 @mobile-padding;
 
+  @media (min-width: @tablet-width) {
+    min-height: 330px;
+  }
+
   @media (min-width: @desktop-width) {
+    min-height: 284px;
     padding: 0 @desktop-padding;
   }
+}
 
-  &--main {
-    padding-top: 24px;
-    padding-bottom: 34px;
 
-    background-image: url("../../img/phone/phone-mobile.png");
-    background-size: auto;
-    background-position: center top 110px;
-    background-repeat: no-repeat;
+.page-header--promo .page-header__intro {
+  background-image: url("../../img/phone/phone-mobile.png");
+  background-size: auto;
+  background-position: center top 110px;
+  background-repeat: no-repeat;
 
-    @media (min-width: @tablet-width) {
-      height: 619px;
-      padding-top: 94px;
-      padding-bottom: 40px;
-
-      background-image: url("../../img/phone/phone-tablet.png");
-      background-position: center top 74px;
-    }
-
-    @media (min-width: @desktop-width) {
-      height: 743px;
-      padding-top: 99px;
-      padding-bottom: 125px;
-
-      background-image: url("../../img/phone/phone-desktop.png");
-      background-position: right top 98px;
-    }
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/phone/phone-tablet.png");
+    background-position: center top 74px;
   }
 
-  &--inner {
-    min-height: 171px;
-    padding-top: 36px;
-    padding-bottom: 10px;
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/phone/phone-desktop.png");
+    background-position: right 4px top 98px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      min-height: 330px;
-      padding-bottom: 10px;
-    }
+.page-header__intro-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
 
-    @media (min-width: @desktop-width) {
-      min-height: 284px;
-      padding-top: 74px;
-      padding-bottom: 10px;
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 619px;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 743px;
+  }
+}
+
+.page-header__intro-wrapper {
+  display: grid;
+  grid-template-rows: 396px min-content;
+  gap: 28px;
+
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-rows: min-content min-content;
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 36px;
+  }
+}
+
+.page-header__head {
+  padding-top: 36px;
+  // padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 74px;
+  }
+}
+
+.page-header--promo .page-header__head {
+  padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 99px;
+  }
+}
+
+.page-header__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    br {
+      display: none;
     }
   }
 }
 
-.page-header--main .page-header__head {
-  height: 396px;
+.page-header__slogan {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+
+  br:first-of-type {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
-    height: auto;
+    font-size: 40px;
+    line-height: 48px;
+
+    br:first-of-type {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
