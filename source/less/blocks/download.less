@@ -18,7 +18,7 @@
   font-weight: 700;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,17 +45,19 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
+    padding-right: 4px;
     margin-bottom: 31px;
   }
 
   @media (min-width: @desktop-width) {
+    padding-right: 0;
     margin-bottom: 53px;
   }
 }
 
 .download__platforms-list {
   display: grid;
-  grid-template-columns: min-content min-content min-content;
+  grid-template-columns: auto auto auto;
   gap: 35px;
   align-items: center;
 
