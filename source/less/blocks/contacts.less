@@ -10,7 +10,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 59px @desktop-padding 26px @desktop-padding;
+    padding: 59px @desktop-padding 17px @desktop-padding;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 61px;
+    margin-bottom: 41px;
 
     font-size: 50px;
     line-height: 68px;
@@ -50,8 +50,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    column-gap: 8px;
   }
 }
 
@@ -89,8 +88,29 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: auto;
-    grid-column-end: auto;
+    &:nth-of-type(odd) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: auto;
+      grid-row-end: auto;
+      justify-self: start;
+    }
+
+    &:last-of-type {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      justify-self: center;
+    }
+
+    &:nth-of-type(even) {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: auto;
+      grid-row-end: auto;
+      justify-self: end;
+    }
   }
 }
 
@@ -107,7 +127,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 34px;
+    margin-bottom: 22px;
   }
 }
 

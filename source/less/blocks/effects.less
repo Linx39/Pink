@@ -1,44 +1,33 @@
-.effects {
-
-}
-
 .effects__list {
   .list();
 }
 
-.effects__label {
-  display: block;
+.effects__button {
+  .button();
 
-  .effects__item--crop & {
-    width: 44px;
-    height: 44px;
-  }
-
-  .effects__item--fill & {
-    width: 48px;
-    height: 43px;
-  }
-
-  .effects__item--contrast & {
-    width: 32px;
-    height: 32px;
-  }
+  width: 56px;
+  height: 56px;
 }
 
-.effects__label svg {
-  @media (max-width: @mobile-width-only) {
-    fill: fade(@color-blue, 30%);
+.effects__button svg {
+  display: block;
+  margin: auto;
 
-    &:hover {
-      fill: fade(@color-blue, 50%);
-    }
+  fill: fade(@color-blue, 30%);
 
-    &:active {
-      fill: @color-pink;
-    }
+  .effects__item--crop & {
+    margin-left: 0;
+  }
 
-    .effects__item--current & {
-      fill: @color-pink;
-    }
+  &:hover {
+    fill: fade(@color-blue, 50%);
+  }
+
+  &:active {
+    fill: @color-pink;
+  }
+
+  .effects__item--current & {
+    fill: @color-pink;
   }
 }
