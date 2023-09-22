@@ -66,6 +66,9 @@
 
 
 .page-header--promo .page-header__intro {
+  padding-top: 0;
+  padding-bottom: 0;
+
   background-image: url("../../img/phone/phone-mobile.png");
   background-size: auto;
   background-position: center top 110px;
@@ -116,14 +119,17 @@
 }
 
 .page-header__head {
-  padding-top: 31px;
-  // padding-bottom: 24px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 74px;
+    padding-top: 59px;
+    padding-bottom: 59px;
   }
 }
 
@@ -153,9 +159,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    br {
-      display: none;
-    }
+    // br {
+    //   display: none;
+    // } // для каталога br не нужен
   }
 }
 

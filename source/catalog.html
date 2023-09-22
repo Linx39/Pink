@@ -25,7 +25,7 @@
               <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z"/>
             </svg>
             <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" width="23" height="23" viewBox="0 0 23 23" aria-hidden="true" focusable="false" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z""/>
+              <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z"/>
               <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z"/>
             </svg>
             <span class="visually-hidden">Открыть меню</span>
@@ -51,7 +51,7 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
-                Html Academy
+                HTML Academy
               </a>
             </li>
           </ul>
@@ -76,21 +76,20 @@
         </div>
 
         <div class="photos__panorama">
-          <div class="photos__img">
+          <div class="photos__img photos__img--panorama">
             <img src="./img/photo/panorama-mobile.jpg" width="320" height="137" alt="Главное фото.">
+
+            <span class="photos__img-tag">ПАНОРАМА ДНЯ</span>
           </div>
         </div>
 
         <div class="photos__content">
           <div class="photos__description photos__description--panorama">
-            <blockquote class="photos__blockquote">
-              <div class="photos__blockquote-source">
+            <blockquote class="photos__blockquote photos__blockquote--panorama">
+              <div class="photos__source">
                 <cite class="photos__author">Анна</cite>
-                <time class="photos__date" datetime="2023-08-04">
-                  <span class="photos__time">(5 минут назад)</span>
-                </time>
+                <time class="photos__date" datetime="2023-08-04">(5 минут назад)</time>
               </div>
-
               <p class="photos__review">
                 Прыгать или нет? Напишите в<br>
                 комментарии свой совет и<br>
@@ -115,13 +114,10 @@
 
               <div class="photos__description">
                 <blockquote class="photos__blockquote">
-                  <div class="photos__blockquote-source">
+                  <div class="photos__source">
                     <cite class="photos__author">Левон</cite>
-                    <time class="photos__date" datetime="2023-08-04">
-                      <span class="photos__time">(5 часов назад)</span>
-                    </time>
+                    <time class="photos__date" datetime="2023-08-04">(5 часов назад)</time>
                   </div>
-
                   <p class="photos__review">
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
@@ -143,10 +139,10 @@
 
               <div class="photos__description">
                 <blockquote class="photos__blockquote">
-                  <cite class="photos__author">Антон</cite>
-                  <time class="photos__date" datetime="2023-08-04">
-                    <span class="photos__time">(12 часов назад)</span>
-                  </time>
+                  <div class="photos__source">
+                    <cite class="photos__author">Антон</cite>
+                    <time class="photos__date" datetime="2023-08-04">(12 часов назад)</time>
+                  </div>
                   <p class="photos__review">
                     Соседи будут рады!
                   </p>
@@ -168,10 +164,10 @@
 
               <div class="photos__description">
                 <blockquote class="photos__blockquote">
-                  <cite class="photos__author">Борис</cite>
-                  <time class="photos__date" datetime="2023-08-04">
-                    <span class="photos__time">(20 часов назад)</span>
-                  </time>
+                  <div class="photos__source">
+                    <cite class="photos__author">Борис</cite>
+                    <time class="photos__date" datetime="2023-08-04">(20 часов назад)</time>
+                  </div>
                   <p class="photos__review">
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
@@ -193,10 +189,10 @@
 
               <div class="photos__description">
                 <blockquote class="photos__blockquote">
-                  <cite class="photos__author">Сергей</cite>
-                  <time class="photos__date" datetime="2023-08-04">
-                    <span class="photos__time">(25 часов назад)</span>
-                  </time>
+                  <div class="photos__source">
+                    <cite class="photos__author">Сергей</cite>
+                    <time class="photos__date" datetime="2023-08-04">(25 часов назад)</time>
+                  </div>
                   <p class="photos__review">
                     Самая кубанская в мире!
                   </p>
@@ -218,10 +214,10 @@
 
               <div class="photos__description">
                 <blockquote class="photos__blockquote">
-                  <cite class="photos__author">Максим</cite>
-                  <time class="photos__date" datetime="2023-08-04">
-                    <span class="photos__time">(40 часов назад)</span>
-                  </time>
+                  <div class="photos__source">
+                    <cite class="photos__author">Максим</cite>
+                    <time class="photos__date" datetime="2023-08-04">(40 часов назад)</time>
+                  </div>
                   <p class="photos__review">
                     Где снег-то?
                   </p>
@@ -243,10 +239,10 @@
 
               <div class="photos__description">
                 <blockquote class="photos__blockquote">
-                  <cite class="photos__author">Надежда</cite>
-                  <time class="photos__date" datetime="2023-08-04">
-                    <span class="photos__time">(45 часов назад)</span>
-                  </time>
+                  <div class="photos__source">
+                    <cite class="photos__author">Надежда</cite>
+                    <time class="photos__date" datetime="2023-08-04">(45 часов назад)</time>
+                  </div>
                   <p class="photos__review">
                     Всем GM и взаимные лайки!
                   </p>
@@ -285,90 +281,86 @@
 
             <div class="upload__group-wrapper">
               <fieldset class="upload__group upload__editor-group">
-                <div class="upload__effects effects">
-                  <ul class="upload__effects-list effects__list">
-                    <li class="upload__effects-item effects__item effects__item--crop effects__item--current">
-                      <button class="effects__button type="button">
-                        <svg width="44" height="44" viewBox="0 0 44 44"  fill="#D22856" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"/>
-                        </svg>
-                        <span class="visually-hidden">Обрезать фото</span>
-                      </button>
-                    </li>
+                <ul class="upload__effects-list effects">
+                  <li class="upload__effects-item effects__item effects__item--crop effects__item--current">
+                    <button class="effects__button" type="button">
+                      <svg width="44" height="44" viewBox="0 0 44 44"  fill="#D22856" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"/>
+                      </svg>
+                      <span class="visually-hidden">Обрезать фото</span>
+                    </button>
+                  </li>
 
-                    <li class="upload__effects-item effects__item effects__item--fill">
-                      <button class="effects__button type="button"">
-                        <svg width="48" height="43" viewBox="0 0 48 43" fill="#D22856" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"/>
-                          <path d="M48 40H0V43H48V40Z"/>
-                        </svg>
-                        <span class="visually-hidden">Изменить заливку</span>
-                      </button>
-                    </li>
+                  <li class="upload__effects-item effects__item effects__item--fill">
+                    <button class="effects__button" type="button">
+                      <svg width="48" height="43" viewBox="0 0 48 43" fill="#D22856" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"/>
+                        <path d="M48 40H0V43H48V40Z"/>
+                      </svg>
+                      <span class="visually-hidden">Изменить заливку</span>
+                    </button>
+                  </li>
 
-                    <li class="upload__effects-item effects__item effects__item--contrast">
-                      <button class="effects__button" type="button">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"/>
-                          <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"/>
-                        </svg>
-                        <span class="visually-hidden">Изменить контрастность</span>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="upload__effects-item effects__item effects__item--contrast">
+                    <button class="effects__button" type="button">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"/>
+                        <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"/>
+                      </svg>
+                      <span class="visually-hidden">Изменить контрастность</span>
+                    </button>
+                  </li>
+                </ul>
 
-                <div class="upload__scales">
-                  <ul class="upload__scales-list">
-                    <li class="upload__scales-item upload__scales-item--crop upload__scales-item--current">
-                      <label class="upload__scales-label">
-                        <input class="visually-hidden" type="number" name="effect-crop" min="1" max="100" value="83.5">
+                <ul class="upload__scales-list scales">
+                  <li class="upload__scales-item upload__scales-item--current scales__item scales__item--crop">
+                    <label class="upload__scales-label">
+                      <input class="visually-hidden" type="number" name="effect-crop" min="1" max="100" step="0.5" value="83.5">
+                    </label>
 
-                        <div class="upload__range range">
-                          <div class="range__scale">
-                            <div class="range__bar" style="left: 0; width: 83.5%;">
-                              <button class="range__toggle" type="button">
-                                <span class="visually-hidden">Переместить ползунок</span>
-                              </button>
-                            </div>
-                          </div>
+                    <div class="upload__range range">
+                      <div class="range__scale">
+                        <div class="range__bar" style="left: 0; width: 83.5%;">
+                          <button class="range__toggle" type="button">
+                            <span class="visually-hidden">Переместить ползунок</span>
+                          </button>
                         </div>
-                      </label>
-                    </li>
+                      </div>
+                    </div>
+                  </li>
 
-                    <li class="upload__scales-item upload__scales-item--fill">
-                      <label class="upload__scales-label">
-                        <input class="visually-hidden" type="number" name="effect-fill" min="1" max="100" value="15">
+                  <li class="upload__scales-item scales__item scales__item--fill">
+                    <label class="upload__scales-label">
+                      <input class="visually-hidden" type="number" name="effect-fill" min="1" max="100" step="0.5" value="15">
+                    </label>
 
-                        <div class="upload__range range">
-                          <div class="range__scale">
-                            <div class="range__bar" style="left: 0; width: 15%;">
-                              <button class="range__toggle" type="button">
-                                <span class="visually-hidden">Переместить ползунок</span>
-                              </button>
-                            </div>
-                          </div>
+                    <div class="upload__range range">
+                      <div class="range__scale">
+                        <div class="range__bar" style="left: 0; width: 15%;">
+                          <button class="range__toggle" type="button">
+                            <span class="visually-hidden">Переместить ползунок</span>
+                          </button>
                         </div>
-                      </label>
-                    </li>
+                      </div>
+                    </div>
+                  </li>
 
-                    <li class="upload__scales-item upload__scales-item--contrast">
-                      <label class="upload__scales-label">
-                        <input class="visually-hidden" type="number" name="effect-contrast" min="1" max="100" value="50">
+                  <li class="upload__scales-item scales__item scales__item--contrast">
+                    <label class="upload__scales-label">
+                      <input class="visually-hidden" type="number" name="effect-contrast" min="1" max="100" step="0.5" value="50">
+                    </label>
 
-                        <div class="upload__range range">
-                          <div class="range__scale">
-                            <div class="range__bar" style="left: 0; width: 50%;">
-                              <button class="range__toggle" type="button">
-                                <span class="visually-hidden">Переместить ползунок</span>
-                              </button>
-                            </div>
-                          </div>
+                    <div class="upload__range range">
+                      <div class="range__scale">
+                        <div class="range__bar" style="left: 0; width: 50%;">
+                          <button class="range__toggle" type="button">
+                            <span class="visually-hidden">Переместить ползунок</span>
+                          </button>
                         </div>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </fieldset>
 
               <fieldset class="upload__group upload__buttons-group">

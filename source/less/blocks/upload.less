@@ -4,14 +4,14 @@
   padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 73px;
-    padding-bottom: 78px;
+    padding-top: 64px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 @desktop-padding;
-    padding-top: 67px;
-    padding-bottom: 75px;
+    padding-top: 58px;
+    padding-bottom: 67px;
   }
 }
 
@@ -27,7 +27,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 14px;
     line-height: 30px;
   }
 }
@@ -35,6 +34,7 @@
 .upload__content {
   @media (min-width: @desktop-width) {
     padding: 0 @desktop-padding;
+    padding-bottom: 28px;
   }
 }
 
@@ -42,7 +42,7 @@
   display: grid;
   gap: 36px;
 
-  padding: 20px 0;
+  padding: 20px 0 41px 0;
 
   background-color: @color-gray;
 
@@ -68,12 +68,11 @@
 }
 
 .upload__image-group {
+  width: 300px;
+  height: 400px;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-  }
-
-  @media (min-width: @desktop-width) {
+  img {
   }
 }
 
@@ -93,21 +92,18 @@
 }
 
 .upload__editor-group {
-  display: grid;//не нужен
+  display: flex;
+  flex-direction: column;
 
-  // width: 100%;//??
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
+    margin-top: -14px;
     margin-bottom: 0;
   }
-}
 
-.upload__effects {
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    display: none;
+  @media (min-width: @desktop-width) {
+    margin-top: -15px;
   }
 }
 
@@ -116,73 +112,28 @@
   grid-template-columns: min-content min-content min-content;
   gap: 19px;
 
-  // max-width: 240px;
-  // margin: 0 auto;
-}
+  margin: 0 auto;
 
-.upload__scales-list {
-  .list();
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .upload__scales-item {
-  padding: 33px 40px 33px 40px;
-
-  &:nth-of-type(2n) {
-    padding-top: 36px;
-  }
-
   border-bottom: 1px solid fade(@color-blue, 10%);
+
+  @media (min-width: @desktop-width) {
+    &:last-of-type {
+      border-bottom: 1px solid transparent;
+    }
+  }
 
   @media (max-width: @mobile-width-only) {
     &:not(&--current) {
       display: none;
     }
   }
-
-  @media (min-width: @tablet-width) {
-    padding-left: 55px;
-    padding-right: 18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 92px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: @tablet-width) {
-    background-repeat: no-repeat;
-    background-position: center left;
-
-    &--crop {
-      background-image: url("../../img/effect-icon/crop--small.svg");
-    }
-
-    &--fill {
-      background-image: url("../../img/effect-icon/fill--small.svg");
-    }
-
-    &--contrast {
-      background-image: url("../../img/effect-icon/contrast--small.svg");
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &--crop {
-      background-image: url("../../img/effect-icon/crop--big.svg");
-    }
-
-    &--fill {
-      background-image: url("../../img/effect-icon/fill--big.svg");
-    }
-
-    &--contrast {
-      background-image: url("../../img/effect-icon/contrast--big.svg");
-    }
-  }
-}
-
-.upload__range {
-  // width: 100%;//нужна только для мобил
 }
 
 .upload__buttons-group {
@@ -194,19 +145,21 @@
 
   @media (min-width: @tablet-width) {
     gap: 24px;
-    padding: 0;
+    padding-left: 2px;
+    padding-right: 13px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
     gap: 44px;
+    padding: 0;
   }
 }
 
 .upload__button {
   .button();
   width: 100%;
-  padding: 16px;
+  padding: 15.5px;
   border-radius: 30px;
 
   font-size: 18px;
