@@ -78,8 +78,8 @@
           </p>
         </div>
 
-        <form class="contest__form form-grid-container" action="https://echo.htmlacademy.ru/" action="post">
-          <div class="contest__group-wrapper form-grid-container__user">
+        <form class="contest__form form-grid" action="https://echo.htmlacademy.ru/" action="post">
+          <div class="contest__group-wrapper contest__group-wrapper--user form-grid__user">
             <fieldset class="contest__group contest__group-user">
               <legend class="visually-hidden">ФИО</legend>
 
@@ -100,7 +100,7 @@
             </fieldset>
           </div>
 
-          <div class="contest__group-wrapper contest__group-wrapper--controls form-grid-container__achievements">
+          <div class="contest__group-wrapper contest__group-wrapper--achievements form-grid__achievements">
             <fieldset class="contest__group contest__group-achievements">
               <legend class="contest__legend">
                 Ваши безбашенные<br>достижения в путешествии
@@ -158,16 +158,16 @@
             </fieldset>
           </div>
 
-          <div class="contest__group-wrapper form-grid-container__contacts">
+          <div class="contest__group-wrapper contest__group-wrapper--contacts form-grid__contacts">
             <fieldset class="contest__group contest__group-contacts">
-              <legend class="visually-hidden">Контактные данные</legend>
+              <legend class="contest__legend">Kонтактная информация</legend>
 
-              <label class="contest__label contest__label-contacts" for="phone">
+              <label class="contest__label contest__label-contacts contest__label-contacts--phone" for="phone">
                 <span class="contest__label-title">НОМЕР ТЕЛЕФОНА</span>
                 <input class="contest__field" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </label>
 
-              <label class="contest__label contest__label-contacts" for="email">
+              <label class="contest__label contest__label-contacts contest__label-contacts--email" for="email">
                 <span class="contest__label-title">АДРЕС ПОЧТЫ</span>
                 <input class="contest__field" type="text" name="email" id="email" placeholder="Введите почту *" required>
               </label>
@@ -175,10 +175,10 @@
           </div>
 
 
-          <div class="contest__group-wrapper contest__group-wrapper--controls form-grid-container__applications">
+          <div class="contest__group-wrapper contest__group-wrapper--applications form-grid__applications">
             <fieldset class="contest__group contest__group-applications controls">
               <legend class="contest__legend">
-                С каким приложением<br>путешествовали?
+                С каким приложением<br> путешествовали?
               </legend>
 
               <ul class="contest__list contest__list--radio">
@@ -209,7 +209,7 @@
             </fieldset>
           </div>
 
-          <div class="contest__group-wrapper form-grid-container__rewiew">
+          <div class="contest__group-wrapper contest__group-wrapper--rewiew form-grid__rewiew">
             <fieldset class="contest__group contest__group-rewiew">
               <legend class="contest__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
 
@@ -219,12 +219,12 @@
             </fieldset>
           </div>
 
-          <div class="contest__group-wrapper form-grid-container__button">
+          <div class="contest__group-wrapper contest__group-wrapper--button form-grid__button">
             <fieldset class="contest__group contest__group-button">
               <button class="contest__submit contest__button" type="submit">Отправить форму</button>
 
               <p class="contest__footnote">
-                <span class="contest__footnote-mark">*</span>— обязательные <span class="contest__footnote-span">для заполнения </span>поля
+                <span class="contest__footnote-mark">*</span> — обязательные <span class="contest__footnote-span">для заполнения </span>поля
               </p>
             </fieldset>
           </div>

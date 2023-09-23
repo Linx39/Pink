@@ -1,17 +1,24 @@
-.control {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 24px;
-  align-items: center;
-}
+// .control {
+//   display: grid;
+//   grid-template-columns: max-content 1fr;
+//   gap: 20px;
+//   align-items: center;
+
+//   & ~ .control__input[type="radio"] {
+//     gap: 40px;
+//   }
+// }
 
 .control__mark {
   box-sizing: border-box;
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
 
   .control__input[type="radio"] + & {
     position: relative;
+
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
   }
 }
