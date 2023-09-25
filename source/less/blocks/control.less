@@ -1,26 +1,51 @@
-// .control {
-//   display: grid;
-//   grid-template-columns: max-content 1fr;
-//   gap: 20px;
-//   align-items: center;
+.control {
+}
 
-//   & ~ .control__input[type="radio"] {
-//     gap: 40px;
-//   }
-// }
+.control__input[type="text"],
+.control__input[type="textarea"] {
+  border: 2px solid @color-dark-gray;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: @color-blue;
+  }
+
+  &:focus {
+    border-color: @color-pink;
+    outline: none;
+  }
+}
 
 .control__mark {
   box-sizing: border-box;
+
+  border: 2px solid @color-dark-gray;
+  border-radius: 3px;
+
+  .control:hover > & {
+    border-color: @color-blue;
+  }
+
+  .control:focus > & {
+    border-color: @color-pink;
+  }
+
+  .control:active > & {
+    border-color: @color-pink;
+  }
+}
+
+.control__input[type="checkbox"] + .control__mark {
   width: 39px;
   height: 39px;
+}
 
-  .control__input[type="radio"] + & {
-    position: relative;
 
-    width: 41px;
-    height: 41px;
-    border-radius: 50%;
-  }
+.control__input[type="radio"] + .control__mark {
+  position: relative;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
 }
 
 .control__input[type="checkbox"]:checked + .control__mark {
