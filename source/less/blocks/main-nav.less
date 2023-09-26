@@ -46,6 +46,14 @@
     fill: @color-pink;
   }
 
+  &:focus-visible svg {
+    fill: fade(@color-white, 30%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
   &:active svg {
     fill: fade(@color-white, 30%);
   }
@@ -58,10 +66,6 @@
 .main-nav--opened .main-nav__toggle {
   width: 23px;
   height: 23px;
-
-  @media (max-width: (@mobile-width-only)) {
-    margin-right: 3px;
-  }
 }
 
 .main-nav--opened .main-nav__toggle-icon--open {
@@ -138,7 +142,20 @@
     color: @color-pink;
   }
 
+  &:focus-visible {
+    outline: 2px solid fade(@color-white, 30%);
+  }
+
   &:active {
     color: fade(@color-white, 30%);
   }
+}
+
+.main-nav--nojs .main-nav__menu {
+  position: static;
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }

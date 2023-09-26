@@ -76,6 +76,16 @@
   }
 }
 
+.upload__image-group img:focus-visible {
+  outline: 2px solid @color-pink;
+  outline-offset: 2px;
+}
+
+// .upload__image-group img:focus-visible {
+//   outline: 2px solid @color-pink;
+//   outline-offset: 2px;
+// }
+
 .upload__group-wrapper {
   display: flex;
   flex-direction: column;
@@ -175,7 +185,12 @@
       background-color: @color-pink;
     }
 
+    &:focus-visible {
+      border-color: @color-blue;
+    }
+
     &:active {
+      border-color: @color-pink;
       color: fade(@color-white, 30%);
     }
   }
@@ -187,6 +202,10 @@
     &:hover {
       color: fade(@color-blue, 30%);
       border: 3px solid fade(@color-blue, 30%);
+    }
+
+    &:focus-visible {
+      border-color: @color-blue;
     }
 
     &:active {

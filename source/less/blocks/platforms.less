@@ -2,9 +2,10 @@
   .list();
 }
 
-.platforms__item {
-
-}
+// .platforms__item:focus-within {
+//   outline: 2px solid fade(@color-white, 30%);
+//   outline-offset: 2px;
+// }
 
 .platforms__link {
   .button();
@@ -12,6 +13,12 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left top;
+
+  &:focus-visible {
+    outline: 2px solid fade(@color-white, 30%);
+    outline-offset: 2px;
+    // outline: none;
+  }
 }
 
 .platforms__item--apple .platforms__link {

@@ -102,6 +102,21 @@
 .research__link {
   color: @color-pink;
 
+  &:hover {
+    color: @color-blue;
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @color-blue;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: fade(@color-blue, 30%);
+    text-decoration: none;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
