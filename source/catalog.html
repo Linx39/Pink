@@ -75,41 +75,51 @@
           </p>
         </div>
 
-        <!-- <div class="photos__panorama"> -->
-          <div class="photos__panorama">
-            <img src="./img/photo/panorama-mobile.jpg" width="320" height="137" alt="Главное фото.">
+        <div class="photos__panorama">
+          <div class="photos__panorama-image-container">
+            <h3 class="photos__panorama-title">ПАНОРАМА ДНЯ</h3>
 
-            <span class="photos__img-tag">ПАНОРАМА ДНЯ</span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/panorama-desktop.jpg 1x, img/photo/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo/panorama-tablet.jpg 1x, img/photo/panorama-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/photo/panorama-mobile.jpg" srcset="img/photo/panorama-mobile@2x.jpg 2x" alt="Панорама дня.">
+            </picture>
           </div>
-        <!-- </div> -->
 
-        <div class="photos__content">
-          <div class="photos__description photos__description--panorama">
-            <blockquote class="photos__quote">
-              <div class="photos__source photos__source--panorama">
-                <cite class="photos__author">Анна</cite>
-                <time class="photos__date" datetime="2023-08-04">(5 минут назад)</time>
+          <div class="photos__panorama-description-container">
+            <div class="photos__description">
+              <blockquote class="photos__quote">
+                <div class="photos__source">
+                  <cite class="photos__author">Анна</cite>
+                  <time class="photos__date" datetime="2023-08-04">(5 минут назад)</time>
+                </div>
+                <p class="photos__review">
+                  Прыгать или нет? Напишите в<br>
+                  комментарии свой совет и<br>
+                  смотрите прямую трансляцию в<br>
+                  перископе, задавайте свои вопросы!
+                </p>
+              </blockquote>
+
+              <div class="photos__like">
+                <button class="photos__like-button">
+                  <span class="visually-hidden">Кнопка лайка</span>
+                </button>
+                <p class="photos__like-caption">Нравится: 215</p>
               </div>
-              <p class="photos__review">
-                Прыгать или нет? Напишите в<br>
-                комментарии свой совет и<br>
-                смотрите прямую трансляцию в<br>
-                перископе, задавайте свои вопросы!
-              </p>
-            </blockquote>
-
-            <div class="photos__like photos__like--panorama">
-              <button class="photos__like-button">
-                <span class="visually-hidden">Кнопка лайка</span>
-              </button>
-              <p class="photos__like-caption photos__like-caption--panorama">Нравится: 215</p>
             </div>
           </div>
+        </div>
 
+        <div class="photos__catalog">
           <ul class="photos__list">
             <li class="photos__item">
-              <div class="photos__img">
-                <img src="./img/photo/photo-1-mobile.jpg" width="280" height="180" alt="Фото-1.">
+              <div class="photos__image-container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-1-desktop.jpg 1x, img/photo/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo/photo-1-tablet.jpg 1x, img/photo/photo-1-tablet@2x.jpg 2x">
+                  <img class="photos__image" src="img/photo/photo-1-mobile.jpg" srcset="img/photo/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя.">
+                </picture>
               </div>
 
               <div class="photos__description">
@@ -133,8 +143,12 @@
             </li>
 
             <li class="photos__item">
-              <div class="photos__img">
-                <img src="./img/photo/photo-2-mobile.jpg" width="280" height="180" alt="Фото-2.">
+              <div class="photos__image-container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-2-desktop.jpg 1x, img/photo/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo/photo-2-tablet.jpg 1x, img/photo/photo-2-tablet@2x.jpg 2x">
+                  <img class="photos__image" src="img/photo/photo-2-mobile.jpg" srcset="img/photo/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя.">
+                </picture>
               </div>
 
               <div class="photos__description">
@@ -158,8 +172,12 @@
             </li>
 
             <li class="photos__item">
-              <div class="photos__img">
-                <img src="./img/photo/photo-3-mobile.jpg" width="280" height="180" alt="Фото-3.">
+              <div class="photos__image-container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-3-desktop.jpg 1x, img/photo/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo/photo-3-tablet.jpg 1x, img/photo/photo-3-tablet@2x.jpg 2x">
+                  <img class="photos__image" src="img/photo/photo-3-mobile.jpg" srcset="img/photo/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя.">
+                </picture>
               </div>
 
               <div class="photos__description">
@@ -183,8 +201,12 @@
             </li>
 
             <li class="photos__item">
-              <div class="photos__img">
-                <img src="./img/photo/photo-4-mobile.jpg" width="280" height="180" alt="Фото-4.">
+              <div class="photos__image-container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-4-desktop.jpg 1x, img/photo/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo/photo-4-tablet.jpg 1x, img/photo/photo-4-tablet@2x.jpg 2x">
+                  <img class="photos__image" src="img/photo/photo-4-mobile.jpg" srcset="img/photo/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя.">
+                </picture>
               </div>
 
               <div class="photos__description">
@@ -208,8 +230,12 @@
             </li>
 
             <li class="photos__item">
-              <div class="photos__img">
-                <img src="./img/photo/photo-5-mobile.jpg" width="280" height="180" alt="Фото-5.">
+              <div class="photos__image-container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-5-desktop.jpg 1x, img/photo/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo/photo-5-tablet.jpg 1x, img/photo/photo-5-tablet@2x.jpg 2x">
+                  <img class="photos__image" src="img/photo/photo-5-mobile.jpg" srcset="img/photo/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя.">
+                </picture>
               </div>
 
               <div class="photos__description">
@@ -233,8 +259,12 @@
             </li>
 
             <li class="photos__item">
-              <div class="photos__img">
-                <img src="./img/photo/photo-6-mobile.jpg" width="280" height="180" alt="Фото-6.">
+              <div class="photos__image-container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-6-desktop.jpg 1x, img/photo/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo/photo-6-tablet.jpg 1x, img/photo/photo-6-tablet@2x.jpg 2x">
+                  <img class="photos__image" src="img/photo/photo-6-mobile.jpg" srcset="img/photo/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя.">
+                </picture>
               </div>
 
               <div class="photos__description">
@@ -274,7 +304,11 @@
           <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="upload__group upload__image-group">
               <label class="upload__label">
-                <img src="./img/photo/photo-7-mobile.jpg" width="280" height="374" alt="Загружаемое фото." tabindex="0>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-7-desktop.jpg 1x, img/photo/photo-7-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo/photo-7-tablet.jpg 1x, img/photo/photo-7-tablet@2x.jpg 2x">
+                  <img class="upload__image" src="img/photo/photo-7-mobile.jpg" srcset="img/photo/photo-7-mobile@2x.jpg 2x" alt="Образец фото для загрузки.">
+                </picture>
                 <input class="visually-hidden" type="file" name="image" tabindex="-1">
               </label>
             </fieldset>
