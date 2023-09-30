@@ -58,18 +58,16 @@
         </div>
       </nav>
 
-      <section class="page-header__intro page-header__promo-wrapper">
-        <div class="page-header__head page-header__intro-grid-container">
-          <div class="">
-            <h1 class="visually-hidden">Приложение Pink</h1>
+      <section class="page-header__intro page-header__intro-grid">
+        <div class="page-header__head">
+          <h1 class="visually-hidden">Приложение Pink</h1>
 
-            <p class="page-header__slogan">
-              Взгляните<br> на жизнь<br> иначе!
-            </p>
-          </div>
+          <p class="page-header__slogan">
+            Взгляните<br> на жизнь<br> иначе!
+          </p>
         </div>
 
-        <div class="page-header__intro-image">
+        <div class="page-header__image-container">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/demo/demo-desktop.png 1x, img/demo/demo-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/demo/demo-tablet.png 1x, img/demo/demo-tablet@2x.png 2x">
@@ -77,7 +75,7 @@
           </picture>
         </div>
 
-        <div class="page-header__download page-header__intro-grid-container">
+        <div class="page-header__download">
           <div class="download">
             <a class="download__button" href="">
               Скачать приложение
@@ -126,48 +124,53 @@
         </div>
 
         <div class="information__content">
-          <div class="information__content-wrapper information__content-grid">
-            <div class="information__features">
-              <ul class="information__features-list">
-                <li class="information__features-item">
-                  <h3 class="information__title">Поднимает настроение</h3>
-                  <p class="information__description">
-                    Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-                  </p>
-                </li>
+          <div class="information__content-wrapper">
+            <ul class="information__list">
+              <li class="information__item">
+                <div class="information__images-container information__images-container--real">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/screen/real-desktop.png 1x, img/screen/real-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/screen/real-tablet.png 1x, img/screen/real-tablet@2x.png 2x">
+                    <img class="information__images" src="img/screen/real-mobile.png" srcset="img/screen/real-mobile@2x.png 2x" alt="Пример работы приложения">
+                  </picture>
+                </div>
 
-                <li class="information__features-item">
-                  <h3 class="information__title">Меняет мир вокруг</h3>
-                  <p class="information__description">
-                    Сделайте снимок и украсьте&nbsp;его смайликом или&nbsp;текстовой подписью, чтобы усилить&nbsp;эффект
-                  </p>
-                </li>
+                <h3 class="information__title">Поднимает настроение</h3>
+                <p class="information__description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
 
-                <li class="information__features-item">
-                  <h3 class="information__title">Заводит новых&nbsp;друзей</h3>
-                  <p class="information__description">
-                    Ставьте лайки, комментируйте, делитесь фотографиями с друзьями<br> и заводите новых
-                  </p>
-                </li>
-              </ul>
-            </div>
+              <li class="information__item">
+                <div class="information__images-container information__images-container--filter">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/screen/filter-desktop.png 1x, img/screen/filter-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/screen/filter-tablet.png 1x, img/screen/filter-tablet@2x.png 2x">
+                    <img class="information__images" src="img/screen/filter-mobile.png" srcset="img/screen/filter-mobile@2x.png 2x" alt="Пример работы приложения">
+                  </picture>
+                </div>
 
-            <div class="information__images">
-              <ul class="information__images-list">
-                <li class="information__images-item">
-                  <h3 class="visually-hidden">Реальное фото</h3>
-                  <div class="information__images-container information__images-container--real"></div>
-                </li>
-                <li class="information__images-item">
-                  <h3 class="visually-hidden">Розовое фото</h3>
-                  <div class="information__images-container information__images-container--pink"></div>
-                </li>
-                <li class="information__images-item information__images-item--current">
-                  <h3 class="visually-hidden">Фото со смайликом</h3>
-                  <div class="information__images-container information__images-container--smile"></div>
-                </li>
-              </ul>
-            </div>
+                <h3 class="information__title">Меняет мир вокруг</h3>
+                <p class="information__description">
+                  Сделайте снимок и украсьте&nbsp;его смайликом или&nbsp;текстовой подписью, чтобы усилить&nbsp;эффект
+                </p>
+              </li>
+
+              <li class="information__item information__item--current">
+                <div class="information__images-container information__images-container--smile">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/screen/smile-desktop.png 1x, img/screen/smile-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/screen/smile-tablet.png 1x, img/screen/smile-tablet@2x.png 2x">
+                    <img class="information__images" src="img/screen/smile-mobile.png" srcset="img/screen/smile-mobile@2x.png 2x" alt="Пример работы приложения">
+                  </picture>
+                </div>
+
+                <h3 class="information__title">Заводит новых&nbsp;друзей</h3>
+                <p class="information__description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями<br> и заводите новых
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -369,8 +372,12 @@
           </ul>
         </div>
 
-        <div class="contacts__map">
-          <img src="img/map.jpg" width="320" height="200" alt="Карта с адресом.">
+        <div class="contacts__map-container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
+            <img class="contacts__map" src="img/map/map-mobile.png" srcset="img/map/map-mobile@2x.png 2x" alt="Карта с адресом.">
+          </picture>
         </div>
       </section>
     </main>

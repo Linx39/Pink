@@ -16,7 +16,6 @@
   width: 12px;
   height: 12px;
 
-  background-color: inherit;
   border-radius: 50%;
 
   &::before {
@@ -25,8 +24,8 @@
     height: 6px;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
     margin: auto;
     content: "";
 
@@ -34,15 +33,7 @@
     border-radius: 50%;
   }
 
-  &--current {
-    background-color: @color-blue;
-
-    &::before {
-      background-color: @color-white;
-    }
-  }
-
-  &:hover {
+  &:hover::before {
     opacity: 0.6;
   }
 
@@ -56,6 +47,22 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  &--current {
+    border: 3px solid @color-blue;
+
+    &::before {
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: @color-blue;
+    }
+
+    &:active {
+      background-color: @color-blue;
+    }
   }
 }
 
