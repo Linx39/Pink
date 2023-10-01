@@ -58,13 +58,11 @@
 }
 
 .page-header--promo .page-header__intro {
-  min-height: auto;
-}
-
-.page-header__intro-grid {
   display: grid;
   grid-template-columns: @mobile-padding 1fr @mobile-padding;
   row-gap: 28px;
+
+  min-height: auto;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: @mobile-padding 1fr 20px 1fr @mobile-padding;
@@ -78,7 +76,7 @@
 }
 
 .page-header__head {
-  padding: 0 @mobile-padding;
+  .wrapper();
   padding-top: 28px;
   padding-bottom: 28px;
 
@@ -87,7 +85,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 @desktop-padding;
     padding-top: 59px;
   }
 }
@@ -110,7 +107,7 @@
   }
 }
 
-.page-header__image-container {
+.page-header__image {
   grid-column: 1 / -1;
   justify-self: center;
   align-self: center;
@@ -155,9 +152,9 @@
 
   @media (min-width: @desktop-width) {
     &--contest {
-      br {
+      br:first-of-type {
         display: none;
-      } // для каталога br не нужен
+      }
     }
   }
 }

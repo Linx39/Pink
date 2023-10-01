@@ -2,7 +2,10 @@
 }
 
 .contacts__content {
-  padding: 41px @mobile-padding 34px @mobile-padding;
+  .wrapper();
+
+  padding-top: 41px;
+  padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     padding-top: 44px;
@@ -10,7 +13,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 59px @desktop-padding 18px @desktop-padding;
+    padding-top: 59px;
+    padding-bottom: 18px;
   }
 }
 

@@ -3,62 +3,47 @@
     display: none;
   }
 
-  @media (min-width: @tablet-width) {
-    padding: 0 @mobile-padding;
-  }
-
   @media (min-width: @desktop-width) {
-    padding: 0 @desktop-padding;
     background-color: @color-gray;
   }
 }
 
 .research__wrapper {
+  .wrapper();
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 365px;
+
+    background-image: url("../../img/effect-24-tablet.svg");
+    background-size: 238px 276px;
+    background-repeat: no-repeat;
+    background-position: top 54px left @mobile-padding;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 2fr;
     gap: 40px;
-  }
-}
+    min-height: 429px;
 
-.research__intro {
-  @media (min-width: @tablet-width) {
-    padding-top: 54px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 8px;
-  }
-}
-
-.research__image-container {
-  @media (min-width: @tablet-width) {
-    height: 276px;
-    background-repeat: no-repeat;
-    background-image: url("../../img/effect-24--tablet.svg");
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 345px;
-    background-image: url("../../img/effect-24--desktop.svg");
-    background-position: top center;
+    background-image: url("../../img/effect-24-desktop.svg");
+    background-size: 298px 345px;
+    background-position: top 17px left @desktop-padding + 1;
   }
 }
 
 .research__content {
   @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+
     padding-top: 96px;
-    padding-bottom: 57px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 31px;
-    padding-top: 103px;
-    padding-bottom: 111px;
+    padding-left: 30px;
+    padding-top: 112px;
   }
 }
 
@@ -89,6 +74,9 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,7 +88,16 @@
 }
 
 .research__link {
-  color: @color-pink;
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+    color: @color-pink;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 
   &:hover {
     color: @color-blue;
@@ -115,10 +112,5 @@
   &:active {
     color: fade(@color-blue, 30%);
     text-decoration: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
   }
 }

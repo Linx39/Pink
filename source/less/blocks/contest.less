@@ -2,7 +2,8 @@
 }
 
 .contest__head {
-  padding: 0 @mobile-padding;
+  .wrapper();
+
   padding-top: 44px;
   padding-bottom: 35px;
 
@@ -12,7 +13,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 @desktop-padding;
     padding-top: 91px;
     padding-bottom: 65px;
   }
@@ -60,18 +60,18 @@
 }
 
 .contest__group-wrapper {
-  padding: 0 @mobile-padding;
+  .wrapper();
 
   @media (max-width: @mobile-width-only) {
     &--achievements {
       padding-top: 39px;
-      padding-bottom: 43px;
+      padding-bottom: 42px;
       background-color: @color-gray;
     }
 
     &--applications {
       padding-top: 39px;
-      padding-bottom: 41px;
+      padding-bottom: 40px;
       background-color: @color-gray;
     }
 
@@ -140,7 +140,7 @@
 }
 
 .contest__group {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
   border: none;
@@ -162,7 +162,7 @@
 .contest__list-applications {
   display: grid;
   gap: 34px;
-  padding-top: 33px;
+  padding-top: 34px;
 
   @media (min-width: @tablet-width) {
     padding: 38px 58px 52px 58px;
@@ -177,7 +177,7 @@
 .contest__list-achievements {
   display: grid;
   gap: 43px;
-  padding-top: 37px;
+  padding-top: 38px;
 
   @media (min-width: @tablet-width) {
     padding: 38px 58px 48px 58px;
@@ -270,10 +270,6 @@
     br {
       display: none;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 31px;
   }
 }
 
@@ -406,7 +402,7 @@
   align-items: center;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 29px;
   color: @color-blue;
 
   .contest__list--checkbox & {

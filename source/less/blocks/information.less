@@ -1,8 +1,6 @@
-.information {
-}
-
 .information__head {
-  padding: 0 @mobile-padding;
+  .wrapper();
+
   padding-top: 40px;
   padding-bottom: 32px;
 
@@ -12,7 +10,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 @desktop-padding;
     padding-top: 62px;
     padding-bottom: 51px;
   }
@@ -69,8 +66,10 @@
 }
 
 .information__content-wrapper {
+  .wrapper();
+
   position: relative;
-  padding: 0 @mobile-padding;
+
   padding-top: 81px;
   padding-bottom: 318px;
 
@@ -80,9 +79,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 @desktop-padding;
     padding-top: 6px;
-    padding-bottom: 59px;
+    padding-bottom: 50px;
   }
 }
 
@@ -100,9 +98,10 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 50px;
     width: 100%;
-    margin: 0;
+    margin-left: 0;
   }
 }
 
@@ -134,7 +133,7 @@
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    left: 20px;
+    left: @tablet-padding;
     right: auto;
 
     height: 481px;
@@ -144,7 +143,7 @@
     position: relative;
     left: auto;
     z-index: 2;
-    
+
     display: block;
     height: 301px;
 
@@ -161,10 +160,10 @@
       width: 100%;
       height: 17px;
       bottom: -8.5px;
-      z-index: -1;
+      // z-index: 1;
       content: "";
 
-      background: linear-gradient(90deg, @color-white 0%, @color-black 50%, @color-white 100%);
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
       opacity: 0.3;
       border-radius: 50%;
       clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
@@ -173,23 +172,7 @@
 }
 
 .information__item--current .information__images-container {
-  // position: absolute;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
-  // z-index: 2;
-
   display: block;
-
-  @media (min-width: @tablet-width) {
-    // left: 20px;
-    // right: auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    // position: relative;
-    // left: auto;
-  }
 }
 
 .information__images {

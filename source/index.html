@@ -58,7 +58,7 @@
         </div>
       </nav>
 
-      <section class="page-header__intro page-header__intro-grid">
+      <section class="page-header__intro">
         <div class="page-header__head">
           <h1 class="visually-hidden">Приложение Pink</h1>
 
@@ -67,11 +67,11 @@
           </p>
         </div>
 
-        <div class="page-header__image-container">
+        <div class="page-header__image">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/demo/demo-desktop.png 1x, img/demo/demo-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/demo/demo-tablet.png 1x, img/demo/demo-tablet@2x.png 2x">
-            <img class="page-header__image" src="img/demo/demo-mobile.png" srcset="img/demo/demo-mobile@2x.png 2x" alt="Демонстрация работы приложения">
+            <img src="img/demo/demo-mobile.png" srcset="img/demo/demo-mobile@2x.png 2x" alt="Демонстрация работы приложения">
           </picture>
         </div>
 
@@ -177,13 +177,9 @@
 
       <section class="research">
         <div class="research__wrapper">
-          <h2 class="visually-hidden">Исследования</h2>
-
-          <div class="research__intro">
-            <div class="research__image-container"></div>
-          </div>
-
           <div class="research__content">
+            <h2 class="visually-hidden">Исследования</h2>
+
             <p class="research__slogan">
               Эффект <br> на 24 часа!
             </p>
@@ -200,16 +196,25 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper slider"">
           <h2 class="visually-hidden">Отзывы</h2>
 
-          <ul class="reviews__list slider">
-            <li class="reviews__item slider__item">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item reviews__item--current slider__item slider__item-current">
               <blockquote class="reviews__blockquote">
                 <cite class="reviews__auhtor">Николай Петров</cite>
                 <span class="reviews__auhtor-details">25 лет, водитель трамвая</span>
                 <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <cite class="reviews__auhtor">Пётр Николаев</cite>
+                <span class="reviews__auhtor-details">30 лет, командир вертолёта</span>
+                <p class="reviews__text">
+                  «Приложение отстой!»
                 </p>
               </blockquote>
             </li>
@@ -253,17 +258,17 @@
               <caption class="visually-hidden">Таблица тарифов</caption>
 
               <thead>
-                <tr class="price-table__heads">
-                  <th class="price-table__head price-table__cell-tittles"></th>
-                  <th class="price-table__head">
+                <tr class="price-table__row">
+                  <th class="price-table__head price-table__cell price-table__cell--tittles"></th>
+                  <th class="price-table__head price-table__cell">
                     <span class="price-table__head-name">БАЗА</span>
                     <span class="price-table__head-value">1,99 USD</span>
                   </th>
-                  <th class="price-table__head price-table__head--bestceller price-table__head--current">
+                  <th class="price-table__head price-table__cell price-table__head--bestceller price-table__head--current slider--current">
                     <span class="price-table__head-name">СТАНДАРТ</span>
                     <span class="price-table__head-value">3,99 USD</span>
                   </th>
-                  <th class="price-table__head">
+                  <th class="price-table__head price-table__cell">
                     <span class="price-table__head-name">АНЛИМ</span>
                     <span class="price-table__head-value">9,99 USD</span>
                   </th>
@@ -272,58 +277,59 @@
 
               <tbody>
                 <tr class="price-table__row">
-                  <td class="price-table__cell price-table__cell-tittles">
+                  <td class="price-table__data price-table__cell price-table__cell--tittles">
                     Розовый фильтр
                   </td>
-                  <td class="price-table__cell price-table__cell--check">
+                  <td class="price-table__data price-table__data--check price-table__cell">
                     <span class="price-table__annotation">Розовый фильтр</span>
                     <span class="visually-hidden">Есть</span>
                   </td>
-                  <td class="price-table__cell price-table__cell--check">
+                  <td class="price-table__data price-table__data--check price-table__cell">
                     <span class="price-table__annotation">Розовый фильтр</span>
                     <span class="visually-hidden">Есть</span>
                   </td>
-                  <td class="price-table__cell price-table__cell--check">
+                  <td class="price-table__data price-table__data--check price-table__cell">
                     <span class="price-table__annotation">Розовый фильтр</span>
                     <span class="visually-hidden">Есть</span>
                   </td>
                 </tr>
 
                 <tr class="price-table__row">
-                  <td class="price-table__cell price-table__cell-tittles">
+                  <td class="price-table__data price-table__cell price-table__cell--tittles">
                     Смайлики
                   </td>
-                  <td class="price-table__cell price-table__cell--uncheck">
+                  <td class="price-table__data price-table__data--uncheck price-table__cell">
                     <span class="price-table__annotation">Смайлики</span>
                     <span class="visually-hidden">Нет</span>
                   </td>
-                  <td class="price-table__cell price-table__cell--check">
+                  <td class="price-table__data price-table__data--check price-table__cell">
                     <span class="price-table__annotation">Смайлики</span>
                     <span class="visually-hidden">Есть</span>
                   </td>
-                  <td class="price-table__cell price-table__cell--check">
+                  <td class="price-table__data price-table__data--check price-table__cell">
                     <span class="price-table__annotation">Смайлики</span>
                     <span class="visually-hidden">Есть</span>
                   </td>
                 </tr>
 
                 <tr class="price-table__row">
-                  <td class="price-table__cell price-table__cell-tittles">
+                  <td class="price-table__data price-table__cell price-table__cell--tittles">
                     Комментарии
                   </td>
-                  <td class="price-table__cell price-table__cell--uncheck">
+                  <td class="price-table__data price-table__data--uncheck price-table__cell">
                     <span class="price-table__annotation">Комментарии</span>
                     <span class="visually-hidden">Нет</span>
                   </td>
-                  <td class="price-table__cell price-table__cell--uncheck">
+                  <td class="price-table__data price-table__data--uncheck price-table__cell">
                     <span class="price-table__annotation">Комментарии</span>
                     <span class="visually-hidden">Нет</span>
                   </td>
-                  <td class="price-table__cell price-table__cell--check">
+                  <td class="price-table__data price-table__data--check price-table__cell">
                     <span class="price-table__annotation">Комментарии</span>
                     <span class="visually-hidden">Есть</span>
                   </td>
                 </tr>
+              </tbody>
             </table>
           </div>
 
