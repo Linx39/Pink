@@ -105,10 +105,6 @@
     margin-top: -14px;
     margin-bottom: 0;
   }
-
-  // @media (min-width: @desktop-width) {
-  //   margin-top: -14px;
-  // }
 }
 
 .upload__effects-list {
@@ -127,15 +123,15 @@
 .upload__scales-item {
   border-bottom: 1px solid fade(@color-blue, 10%);
 
-  @media (min-width: @desktop-width) {
-    &:last-of-type {
-      border-bottom: 1px solid transparent;
-    }
-  }
-
   @media (max-width: @mobile-width-only) {
     &:not(&--current) {
       display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:last-of-type {
+      border-bottom: 1px solid transparent;
     }
   }
 }
