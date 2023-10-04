@@ -4,12 +4,18 @@
 }
 
 .copyright__text {
+  padding-top: 2px;
   margin-right: 15px;
 
   font-size: 14px;
   line-height: 18px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: @desktop-width) {
+    padding-bottom: 3px;
     margin-right: 13px;
 
     font-size: 18px;
@@ -17,7 +23,6 @@
 }
 
 .copyright__link {
-  position: relative;
   .button();
 
   width: 27px;
@@ -38,11 +43,11 @@
 }
 
 .copyright__link-icon {
-  position: absolute;
-  top: -1px;
-  left: 0;
-
   @media (min-width: @tablet-width) {
-    top: 1px;
+    padding-top: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
