@@ -93,10 +93,9 @@
   .list();
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: max-content max-content max-content max-content;
-    column-gap: 79px;
-    row-gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
