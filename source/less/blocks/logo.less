@@ -1,13 +1,39 @@
 .logo {
   cursor: pointer;
 
-  &:hover svg {
-    fill: @color-pink;
+  &--header svg {
+    fill: @color-white;
+    color: @color-white;
   }
 
-  &:focus-visible {
+  &--footer svg {
+    fill: @color-pink;
+    color: @color-black;
+  }
+
+  &:hover svg {
+    fill: @color-pink;
+    color: @color-pink;
+  }
+
+  &--header:focus-visible {
     outline: 2px solid fade(@color-white, 30%);
-    outline-offset: 2px;
+    outline-offset: 4px;
+  }
+
+  &--footer:focus-visible {
+    outline: 2px solid fade(@color-blue, 30%);
+    outline-offset: 4px;
+  }
+
+  &--header:active svg {
+    color: fade(@color-white, 30%);
+    fill: fade(@color-white, 30%);
+  }
+
+  &--footer:active svg {
+    fill: fade(@color-pink, 30%);
+    color: fade(@color-blue, 30%);
   }
 }
 
@@ -24,26 +50,7 @@
     width: 147px;
     height: 40px;
   }
-
-  &:active svg {
-    fill: fade(@color-white, 30%);
-  }
 }
-
-.logo--footer {
-  width: 145px;
-  height: 40px;
-
-  @media (min-width: @desktop-width) {
-    width: 147px;
-    height: 40px;
-  }
-  
-  &:active path {
-    fill: fade(@color-black, 30%);
-  }
-}
-
 
 .logo--header .logo__mobile {
   @media (min-width: @tablet-width) {
@@ -71,6 +78,15 @@
   }
 }
 
+.logo--footer {
+  width: 145px;
+  height: 40px;
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
 
 .logo--footer .logo__tablet {
   display: block;
@@ -87,3 +103,4 @@
     display: block;
   }
 }
+

@@ -62,12 +62,33 @@
 .logo {
   cursor: pointer;
 }
+.logo--header svg {
+  fill: #ffffff;
+  color: #ffffff;
+}
+.logo--footer svg {
+  fill: #D22856;
+  color: #000000;
+}
 .logo:hover svg {
   fill: #D22856;
+  color: #D22856;
 }
-.logo:focus-visible {
+.logo--header:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.3);
-  outline-offset: 2px;
+  outline-offset: 4px;
+}
+.logo--footer:focus-visible {
+  outline: 2px solid rgba(40, 54, 69, 0.3);
+  outline-offset: 4px;
+}
+.logo--header:active svg {
+  color: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.3);
+}
+.logo--footer:active svg {
+  fill: rgba(210, 40, 86, 0.3);
+  color: rgba(40, 54, 69, 0.3);
 }
 .logo--header {
   width: 74px;
@@ -84,22 +105,6 @@
     width: 147px;
     height: 40px;
   }
-}
-.logo--header:active svg {
-  fill: rgba(255, 255, 255, 0.3);
-}
-.logo--footer {
-  width: 145px;
-  height: 40px;
-}
-@media (min-width: 1200px) {
-  .logo--footer {
-    width: 147px;
-    height: 40px;
-  }
-}
-.logo--footer:active path {
-  fill: rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 660px) {
   .logo--header .logo__mobile {
@@ -125,6 +130,16 @@
 @media (min-width: 1200px) {
   .logo--header .logo__desktop {
     display: block;
+  }
+}
+.logo--footer {
+  width: 145px;
+  height: 40px;
+}
+@media (min-width: 1200px) {
+  .logo--footer {
+    width: 147px;
+    height: 40px;
   }
 }
 .logo--footer .logo__tablet {
@@ -207,6 +222,9 @@
   background-color: transparent;
 }
 .slider__toggle--current:hover {
+  background-color: #283645;
+}
+.slider__toggle--current:focus-visible {
   background-color: #283645;
 }
 .slider__toggle--current:active {
@@ -536,6 +554,7 @@ img {
 }
 .main-nav__menu {
   position: absolute;
+  z-index: 10;
   width: 100%;
   background-color: #283645;
   border-top: 1px solid #000000;
