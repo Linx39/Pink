@@ -12,7 +12,7 @@ Thumbs.db
 node_modules/
 
 # Файлы сборки
-source/style.css
-public/style.css.map
+*.min.*
+build/
 
 coverage/
