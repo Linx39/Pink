@@ -33,6 +33,11 @@
   width: 50px;
   height: 24px;
 
+
+  &:focus-visible .main-nav__toggle-icon {
+    fill: fade(@color-white, 30%);
+  }
+
   &:focus {
     outline: none;
   }
@@ -52,10 +57,6 @@
 
   &:hover {
     fill: @color-pink;
-  }
-
-  &:focus-visible {
-    fill: fade(@color-white, 30%);
   }
 
   &:active {
