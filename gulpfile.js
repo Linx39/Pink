@@ -63,7 +63,10 @@ export const optimizeImages = () => {
 }
 
 export const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg,svg}')
+  return gulp.src([
+    'source/img/**/*.{png,jpg,svg}',
+    '!source/img/sprite/*'
+  ])
     .pipe(gulp.dest('build/img'))
 }
 
@@ -79,6 +82,7 @@ export const createWebp = () => {
 
 export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
+    .pipe(imagemin())
     .pipe(svgstore({
       inlineSvg: true
     }))
