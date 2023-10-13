@@ -141,7 +141,7 @@
     @media (min-width: @desktop-width) {
       grid-column: 1 / 3;
       padding-top: 14px;
-      padding-bottom: 1px;
+      padding-bottom: 0;
     }
   }
 }
@@ -269,20 +269,18 @@
 
   @media (min-width: @tablet-width) {
     line-height: 30px;
-
-    br {
-      display: none;
-    }
   }
 }
 
-.contest__group--applications .contest__legend {
+.contest__group-wrapper--applications .contest__legend {
+  padding: 0 51px;
+
   @media (min-width: @tablet-width) {
     padding: 0 25px;
   }
 }
 
-.contest__group--contacts .contest__legend {
+.contest__group-wrapper--contacts .contest__legend {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -291,13 +289,15 @@
   }
 }
 
-.contest__group--achievements .contest__legend {
+.contest__group-wrapper--achievements .contest__legend {
+  padding: 0 31px;
+
   @media (min-width: @tablet-width) {
     padding: 0 34px;
   }
 }
 
-.contest__group--rewiew .contest__legend {
+.contest__group-wrapper--rewiew .contest__legend {
   @media (min-width: @tablet-width) {
     padding: 0 38px;
   }

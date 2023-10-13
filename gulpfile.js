@@ -38,7 +38,7 @@ export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
-    .pipe(browser.stream()); //?????
+    // .pipe(browser.stream()); //?????
 }
 
 // Scripts
