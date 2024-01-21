@@ -41,6 +41,8 @@
 }
 
 .contest__form {
+  .width-wrapper();
+
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
@@ -52,6 +54,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
     gap: 51px 70px;
+
     padding: 0 @desktop-padding;
   }
 }
