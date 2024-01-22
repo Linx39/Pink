@@ -16,7 +16,6 @@ import browser from 'browser-sync';
 
 
 // Styles
-
 export const styles = () => {
   return gulp.src('source/less/style.less')
     .pipe(plumber())
@@ -33,7 +32,6 @@ export const styles = () => {
 }
 
 // HTML
-
 export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -42,7 +40,6 @@ export const html = () => {
 }
 
 // Scripts
-
 export const scripts = () => {
   return gulp.src('source/js/app.js')
     .pipe(terser())
@@ -52,7 +49,6 @@ export const scripts = () => {
 }
 
  // Images
-
 export const optimizeImages = () => {
   return gulp.src([
     'source/img/**/*.{png,jpg,svg}',
@@ -71,7 +67,6 @@ export const copyImages = () => {
 }
 
 // WebP
-
 export const createWebp = () => {
   return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
     .pipe(webp({quality: 90}))
@@ -79,7 +74,6 @@ export const createWebp = () => {
 }
 
 // Sprite
-
 export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(imagemin())
@@ -91,7 +85,6 @@ export const sprite = () => {
 }
 
 // Copy
-
 export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
@@ -105,14 +98,12 @@ export const copy = (done) => {
 }
 
 // Clean
-
 export const clean = () => {
   return deleteAsync('build');
 };
 
 
 // Server
-
 export const server = (done) => {
   browser.init({
     server: {
@@ -126,14 +117,12 @@ export const server = (done) => {
 }
 
 // Reload
-
 const reload = (done) => {
   browser.reload();
   done();
 }
 
 // Watcher
-
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/app.js', gulp.series(scripts));
@@ -141,7 +130,6 @@ const watcher = () => {
 }
 
 // Build
-
 export const build = gulp.series(
   clean,
   copy,
@@ -156,7 +144,6 @@ export const build = gulp.series(
 );
 
 // Default
-
 export default gulp.series(
   clean,
   copy,
