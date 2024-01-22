@@ -27,7 +27,7 @@ export const styles = () => {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(browser.stream());
 }
 
@@ -35,8 +35,7 @@ export const styles = () => {
 export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'))
-    // .pipe(browser.stream()); //?????
+    .pipe(gulp.dest('docs'))
 }
 
 // Scripts
@@ -44,7 +43,7 @@ export const scripts = () => {
   return gulp.src('source/js/app.js')
     .pipe(terser())
     .pipe(rename('app.min.js'))
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('docs/js'))
     .pipe(browser.stream());
 }
 
@@ -55,7 +54,7 @@ export const optimizeImages = () => {
     '!source/img/sprite/*'
   ])
     .pipe(imagemin())
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('docs/img'))
 }
 
 export const copyImages = () => {
@@ -63,14 +62,14 @@ export const copyImages = () => {
     'source/img/**/*.{png,jpg,svg}',
     '!source/img/sprite/*'
   ])
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('docs/img'))
 }
 
 // WebP
 export const createWebp = () => {
   return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('docs/img'))
 }
 
 // Sprite
@@ -81,7 +80,7 @@ export const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('docs/img'));
 }
 
 // Copy
@@ -93,13 +92,13 @@ export const copy = (done) => {
   ], {
     base: "source"
   })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('docs'))
   done();
 }
 
 // Clean
 export const clean = () => {
-  return deleteAsync('build');
+  return deleteAsync('docs');
 };
 
 
@@ -107,7 +106,7 @@ export const clean = () => {
 export const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'docs'
     },
     cors: true,
     notify: false,
